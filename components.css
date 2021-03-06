@@ -1,0 +1,76 @@
+/* Avatar Css */
+
+.avatar {
+    width: 80px;
+    height: 80px;
+    padding: 3px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.avatar--round {
+    border-radius: 50%;
+}
+
+.avatar__img {
+    width: 100%;
+    border-radius: inherit;
+}
+
+/* alerts css */
+
+.alert-message {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+    min-height: 30px;
+    max-width: 300px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.alert {
+    clip-path: polygon(0% 0%, 86% 0, 100% 50%, 87% 100%, 0% 100%);
+    padding: 10px 20px;
+    margin: 10px;
+}
+
+/* Button */
+
+.btn {
+    border-radius: 5px;
+    border: none;
+    color: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    cursor: pointer;
+    outline: 0;
+    min-height: 1em;
+}
+
+.primary {
+    background-color: var(--color-blue);
+    color: var(--color-white);
+
+}
+
+.secondary {
+    background-color: var(--color-black);
+    color: var(--color-white);
+}
+
+.success {
+    background-color: var(--color-green);
+    color: var(--color-white);
+    
+}
+
+.warning {
+    background-color: var(--color-yellow);
+    color: var(--color-white);
+    
+}
+
+.danger {
+    background-color: var(--color-red);
+    color: var(--color-white);
+}
