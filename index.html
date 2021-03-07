@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Components</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="components.css">
+
 </head>
 <body>
     <h1>Components</h1>
@@ -80,7 +82,7 @@
             <h2>Button</h2>
         </header>
         <main>
-            <button class="btn" tabindex="0">Button</button>
+            <button class="btn">Button</button>
 
             <p>Emphasized: A button can be formatted to show different levels of emphasis</p>
             <button class="btn primary">Primary</button>
@@ -88,11 +90,86 @@
             <button class="btn success">Success</button>
             <button class="btn warning">Warning</button>
             <button class="btn danger">Danger</button>
+            <button class="btn light">Light</button>
 
 
+            <button class="btn btn--labeled text-white">
+                <div class="btn--labeled__text bg-red btn__icon"> <i class="fa fa-thumbs-up " aria-hidden="true"></i> Like</div>
+                <div class="btn--labeled__label text-red">1048</div>
+            </button>            
+            
 
+            <p>A button can also have an icon</p>
+            <button class="btn btn__icon">
+                <i class="fa fa-heart" aria-hidden="true"></i>
+            </button>
 
+            <button class="btn btn__icon primary">
+                <i class="fa fa-motorcycle" aria-hidden="true"></i>
+            </button>
 
+            <button class="btn btn__icon bg-purple">
+                <i class="fa fa-mountain" aria-hidden="true"></i>
+            </button>
+
+            <button class="btn btn__icon secondary">
+                <i class="fa fa-newspaper" aria-hidden="true"></i>
+            </button>
+
+            <p>Outline buttons: These buttons are less pronounced</p>
+
+            <button class="btn btn--outline primary">
+                Primary
+            </button>
+
+            <button class="btn btn--outline secondary">
+                Secondary
+            </button>
+
+            <button class="btn btn--outline danger">
+                Danger
+            </button>
+
+            <button class="btn btn--outline success">
+                Success
+            </button>
+
+            <button class="btn btn--outline warning">
+                Warning
+            </button>
+
+            <button class="btn bg-purple btn--outline ">
+                Purple
+            </button>
+
+            <button class="btn light btn--outline">Light</button>
+
+            <p>Inverted buttons</p>
+            <div style="background: black; padding: 20px;">
+                <button class="btn btn--inverted primary">
+                    Primary
+                </button>
+    
+                <button class="btn btn--inverted secondary">
+                    Secondary
+                </button>
+    
+                <button class="btn btn--inverted danger">
+                    Danger
+                </button>
+    
+                <button class="btn btn--inverted success">
+                    Success
+                </button>
+    
+                <button class="btn btn--inverted warning">
+                    Warning
+                </button>
+    
+                <button class="btn light btn--inverted">Light</button>
+    
+            </div>
+            
 
 
             <!-- <button class="btn bg-red">Button</button> -->

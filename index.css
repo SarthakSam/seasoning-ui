@@ -19,6 +19,7 @@
     --color-white: #F5F3FF;
 
     --font-color: rgba(0, 0, 0, 0.7);
+    --primary-color: var(--color-blue);
 }
 
 .bg-red {   
@@ -139,6 +140,14 @@
 .text-grey {
    color: var(--color-grey);    
 }
+
+.bg-white {   
+    background: var(--color-white);  
+}
+.text-white {
+   color: var(--color-white);    
+}
+
 
 * {
     color: var(--font-color);

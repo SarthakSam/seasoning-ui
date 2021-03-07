@@ -23,7 +23,7 @@
     clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
     min-height: 30px;
     max-width: 300px;
-    padding: 10px;
+    padding: 10px;  
     text-align: center;
     border-radius: 10px;
     margin: 10px;
@@ -43,34 +43,161 @@
     color: rgba(0, 0, 0, 0.6);
     padding: 10px;
     cursor: pointer;
-    outline: 0;
+    outline-color: var(--primary-color);
     min-height: 1em;
+    text-align: center;
+    /* background: inherit; */
 }
+
+/* .btn:not(.btn--outline) {
+    color: var(--color-white);
+} */
 
 .primary {
     background-color: var(--color-blue);
+    border: 1px solid var(--color-blue);
     color: var(--color-white);
-
 }
 
 .secondary {
     background-color: var(--color-black);
+    border: 1px solid var(--color-black);
     color: var(--color-white);
 }
 
 .success {
     background-color: var(--color-green);
     color: var(--color-white);
-    
+    border: 1px solid var(--color-green);
 }
 
 .warning {
     background-color: var(--color-yellow);
     color: var(--color-white);
-    
+    border: 1px solid var(--color-yellow);
 }
 
 .danger {
     background-color: var(--color-red);
     color: var(--color-white);
+    border: 1px solid var(--color-red);
+}
+
+.light {
+    background-color: var(--color-light-indigo);
+    border: 1px solid var(--color-light-indigo);
+    color: var(--color-black);
+}
+
+.btn--labeled {
+    display: flex;
+    padding: 0;
+}
+
+.btn--labeled__text {
+    clip-path: polygon(100% 0, 100% 33%, 90% 49%, 100% 65%, 100% 100%, 0 100%, 0 0);
+    padding: 10px 20px;
+    border-radius: inherit;
+    width: max-content;
+    /* border-right: 0; */
+    /* border-bottom: 0; */
+    color: inherit;
+}
+
+.btn--labeled__label {
+    padding: 10px 20px;
+    background: inherit;
+    border-radius: inherit;
+    border: inherit;
+    color: inherit;
+}
+
+.btn__icon i {
+    color: inherit;
+}
+
+.btn--outline {
+    background: inherit;
+}
+
+.btn--outline.primary {
+    color: var(--color-blue);
+}
+
+.btn--outline.secondary {
+    color: var(--color-black);
+}
+
+.btn--outline.success {
+    color: var(--color-green);
+}
+
+.btn--outline.danger {
+    color: var(--color-red);
+}
+
+.btn--outline.warning {
+    color: var(--color-yellow);
+}
+
+.btn--outline.light {
+    color: var(--color-light-indigo);
+}
+
+.btn--inverted {
+    background: inherit;
+}
+
+.btn--inverted.primary {
+    color: var(--color-blue);
+}
+
+.btn--inverted.secondary {
+    color: var(--color-black);
+}
+
+.btn--inverted.success {
+    color: var(--color-green);
+}
+
+.btn--inverted.danger {
+    color: var(--color-red);
+}
+
+.btn--inverted.warning {
+    color: var(--color-yellow);
+}
+
+.btn--inverted.light {
+    color: var(--color-light-indigo);
+}
+
+.btn--inverted.primary:hover {
+    color: whitesmoke;
+    background: var(--color-blue);
+}
+
+.btn--inverted.secondary:hover {
+    color: whitesmoke;
+    background: var(--color-black);
+}
+
+.btn--inverted.success:hover {
+    color: whitesmoke;
+    background: var(--color-green);
+}
+
+.btn--inverted.danger:hover {
+    color: whitesmoke;
+    background: var(--color-red);
+}
+
+.btn--inverted.warning:hover {
+    color: whitesmoke;
+    background: var(--color-yellow);
+}
+
+.btn--inverted.light:hover {
+    color: whitesmoke;
+    background: var(--color-light-indigo);
 }
