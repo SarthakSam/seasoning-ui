@@ -1,8 +1,8 @@
 /* Avatar Css */
 
 .avatar {
-    width: 80px;
-    height: 80px;
+    width: 50px;
+    height: 50px;
     padding: 3px;
     border: 1px solid black;
     border-radius: 10px;
@@ -21,7 +21,7 @@
 
 .alert-message {
     clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
-    min-height: 30px;
+    min-height: 60px;
     max-width: 300px;
     padding: 10px;  
     text-align: center;
@@ -201,3 +201,246 @@
     color: whitesmoke;
     background: var(--color-light-indigo);
 }
+
+/* card */
+
+.card {
+    width: 100%;
+    border: 2px solid var(--color-grey);
+    padding: 0;
+    box-shadow: 0 0 2px var(--color-grey);
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card__img > img{
+    width: 100%;
+}
+
+.card__body {
+    padding: 15px;
+}
+
+.card__title {
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+.card__meta {
+    color: var(--color-dark-grey);
+    font-size: 0.8rem;
+    font-weight: 300;
+}
+
+.card__description {
+    font-size: 0.8rem;
+}
+
+.card__footer {
+    border-top: 0.5px solid var(--color-grey);
+    color: var(--color-dark-grey);
+    padding: 10px;
+}
+
+.card__header {
+    padding: 10px;
+    flex: 1;
+}
+
+.card__icon {
+    color: var(--color-dark-grey);
+}
+
+.card .avatar {
+    border: none;
+    height: 40px;
+    width: 40px;
+}
+
+ /* Responsive Images */
+
+.image {
+     max-width: 100%;
+     height: auto;
+ }
+
+.image--round {
+     border-radius: 50%;
+ }
+
+ /* List */
+
+ .list {
+     padding: 0;
+     margin: 0;
+     border: 0.25px solid var(--color-grey);
+     /* display: inline-block; */
+     list-style: none;
+ }
+
+.list > .list__item {
+    border: 0.25px solid var(--color-grey);    
+}
+
+ .list__item {
+     padding: 10px;
+ }
+
+.list__item--active {
+    background-color: var(--primary-color);
+    color: var(--color-white);
+}
+
+.list__item.list__item--disabled {
+    color: var(--color-grey);
+    opacity: 0.8;
+    outline: none;
+    cursor: not-allowed;
+}
+
+.list__item--action {
+    display: block;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.list__item--action:not(.list__item--disabled):hover {
+    background-color: var(--color-grey);
+}
+
+.list--horizontal {
+    display: flex;
+}
+
+.list.list--flush {
+    border: none;
+}
+
+.list.list.list--flush .list__item {
+    border: none;
+}
+
+.list .list .list__item {
+    padding-left: 20px;
+}
+
+/* Input */
+
+.input {
+    border-radius: 5px;
+    border: 1px solid var(--color-grey);
+    display: inline-flex;
+    font-size: 1em;
+    margin: 10px;
+    align-items: center;
+}
+
+.input > input {
+    border: none;
+    outline: none;
+    background: inherit;
+    padding: 0.8em;
+    color: inherit;
+    flex: 1;
+}
+
+.input > input::placeholder {
+    color: var(--color-grey);
+}
+
+.input:focus {
+    border: 1px solid var(--color-blue);
+}
+
+.input.focus {
+    border: 1px solid var(--color-blue);
+}
+
+.input.disabled {
+    /* background: var(--color-grey); */
+    pointer-events: none;
+    color: grey;
+    cursor: not-allowed;
+}
+
+.input.disabled > input{
+    pointer-events: none;
+    cursor: not-allowed;
+}
+
+.input.error {
+    border: 0.5px solid rgb(238, 163, 178);
+    outline-color: rgb(238, 163, 178);
+    color: var(--color-red);
+    background: rgba(248, 229, 229, 0.6);
+}
+
+.input.error > input::placeholder {
+    color: rgb(238, 163, 178, 0.8);
+}
+
+.input--icon {
+    padding: 0 0.2em;
+}
+
+.input--icon i {
+    color: inherit;
+    margin: 0 0.3em;
+}
+
+.input__label {
+    display: inline;
+    padding: 0.7em;
+    /* padding: 7px 10px; */
+    border-radius: 5px;
+    border-left: 0;
+    border-bottom: 0;
+    color: inherit;
+    background-color: var(--color-grey);
+}
+
+.input--label.error > .input__label {
+    background-color: rgb(243, 114, 109);
+} 
+
+.input__label--append {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-left: 0.5px solid var(--color-grey);
+}
+
+.input__label--prepend {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-right: 0.5px solid var(--color-grey);
+}
+
+.input__label--basic {
+    background: transparent;
+}
+
+.input.input--transparent {
+    border: none;
+    background: none;
+}
+
+.input.input--transparent .input__label--basic {
+    border: none;
+}
+
+.input.input--fluid {
+    display: flex;
+}
+
+.input.input--small > input {
+  font-size: 0.7em;
+}
+
+.input.input--medium > input {
+    font-size: 0.9em;
+  }
+
+  .input.input--large > input {
+    font-size: 1.2em;
+  }

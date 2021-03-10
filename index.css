@@ -17,6 +17,7 @@
     --color-teal: #00b5ad;
     --color-grey: #e0e1e2;
     --color-white: #F5F3FF;
+    --color-dark-grey: rgba(120, 120, 120, 0.8);
 
     --font-color: rgba(0, 0, 0, 0.7);
     --primary-color: var(--color-blue);
@@ -157,6 +158,9 @@
     font-family: cursive;
 }
 
+body {
+    padding: 10px;
+}
 
 .flex-container {
     display: flex;
@@ -174,3 +178,7 @@
     border-radius: 5px;
 }
 
+.row {
+    display: flex;
+    align-items: center;
+}
