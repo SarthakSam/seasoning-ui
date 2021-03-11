@@ -18,6 +18,7 @@
     --color-grey: #e0e1e2;
     --color-white: #F5F3FF;
     --color-dark-grey: rgba(120, 120, 120, 0.8);
+    --color-light-grey: #f8f9fa;
 
     --font-color: rgba(0, 0, 0, 0.7);
     --primary-color: var(--color-blue);

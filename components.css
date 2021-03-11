@@ -325,12 +325,12 @@
 /* Input */
 
 .input {
-    border-radius: 5px;
     border: 1px solid var(--color-grey);
     display: inline-flex;
     font-size: 1em;
     margin: 10px;
     align-items: center;
+    background: white;
 }
 
 .input > input {
@@ -449,6 +449,7 @@
       border: 1px solid var(--color-grey);
       color: var(--color-dark-grey);
       outline-color: var(--color-blue);
+      cursor: pointer;
   }
 
   .btn--primary {
@@ -940,4 +941,117 @@
 
 .custom-dropdown--large > select {
     font-size: 1.5rem;
+}
+
+.nav {
+    background: var(--color-light-grey);
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    position: relative;
+    color: var(--color-dark-grey);
+}
+
+#nav__toggler {
+    display: none;
+}
+
+.nav__toggler--button {
+    display: none;
+    cursor: pointer;
+}
+
+.nav__title {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 0 0.8em;
+    cursor: pointer;
+    color: var(--color-black);
+}
+
+.nav__link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav__content {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    color: inherit;
+}
+
+.nav__list {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    margin-right: auto;
+    align-items: center;
+    color: inherit;
+}
+
+.nav__item {
+    padding: 0 0.5em;
+    cursor: pointer;
+    color: inherit;
+}
+
+.nav__item.dropdown > .btn {
+    border: none;
+    background-color: transparent;
+    color: inherit;
+    padding-left: 0;
+}
+
+.nav__item.active {
+    color: var(--color-black);
+}
+
+.nav__item.disabled {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (max-width: 710px) {
+
+    .nav__toggler--button {
+        display: block;
+        font-size: 1.1rem;
+    }
+
+    .nav__content {
+        height: 0;
+        position: absolute;
+        top: 100%;
+        background: inherit;
+        left: 0;
+        width: 100%;
+        transition: height .5s;
+        flex-direction: column;
+        align-items: center;
+        display: flex;
+        overflow: hidden;
+    }
+
+    #nav__toggler:checked ~ .nav__content {
+        height: 200px;
+        transition: height .5s;
+    }
+
+    .nav__list {
+        display: block;
+        margin: auto;
+    }
+
+    .nav__item {
+        padding: 0.3em 1em;
+    }
+
+    .nav__form {
+       display: inline;
+    }
+
+    .nav {
+        justify-content: space-between;
+    }
 }
