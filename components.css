@@ -1173,3 +1173,42 @@
     margin: 0 0.1em;
     font-weight: 700;
 }
+
+/* Typography  */
+
+.h1 {
+    font-size: 1.7rem;
+}
+
+.h2 {
+    font-size: 1.5rem;
+}
+
+.h3 {
+    font-size: 1.3rem;
+}
+
+.h4 {
+    font-size: 1.1rem;
+}
+
+.h5 {
+    font-size: 0.9rem;
+}
+
+.h6 {
+    font-size: 0.7rem;
+}
+
+.heading--lead {
+    font-weight: 300;
+}
+
+.text--lead {
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+.text--muted {
+    color: var(--color-dark-grey);
+}
