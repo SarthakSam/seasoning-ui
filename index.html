@@ -27,8 +27,8 @@
     <section>
         <header>Popup</header>
         <main>
-            <button type="button" class="btn btn--primary">Open popup</button>
-            <div class="popup__container" id="popup1">
+            <button type="button" class="btn btn--primary" id="popup__open">Open popup</button>
+            <div class="popup__container popup--small" id="popup">
                 <div class="popup">
                     <div class="popup__header">
                         <p class="popup__title">Popup Header</p>
@@ -38,8 +38,8 @@
                     <div class="popup__footer">
                         <!-- <p class="footer__content">Please selest..</p> -->
                         <div class="popup__footer__buttons">
+                            <button class="btn btn--secondary popup__close">cancel</button>
                             <button class="btn btn--primary">submit</button>
-                            <button class="btn btn--secondary">cancel</button>
                         </div>
                     </div>
                 </div>

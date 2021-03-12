@@ -1081,6 +1081,11 @@
     top: 0;
     background-color: rgba(100, 100, 100, 0.5);
     z-index: 10000;
+    display: none;
+}
+
+.popup__container.active {
+    display: block;
 }
 
 .popup {
@@ -1088,9 +1093,17 @@
     max-width: 500px;
     width: auto;
     margin: auto;
-    margin-top: 50%;
+    margin-top: 50vh;
     transform: translateY(-50%);
     border-radius: 0.5em;
+}
+
+.popup--large > .popup{
+    max-width: 800px;
+}
+
+.popup--small > .popup{
+    max-width: 250px;
 }
 
 .popup__header {
@@ -1102,6 +1115,7 @@
 
 .popup__close {
     margin-left: auto;
+    cursor: pointer;
 }
 
 .popup__body {
