@@ -1,9 +1,5 @@
 /* Avatar Css */
 
-/* body {
-    background: black;
-} */
-
 .avatar {
     width: 50px;
     height: 50px;
@@ -948,7 +944,7 @@
     align-items: center;
     padding: 0 1rem;
     position: relative;
-    color: lightgrey;
+    /* color: var(color-grey); */
     /* background-color: white; */
 }
 
@@ -963,7 +959,7 @@
     padding: 0 0.8em;
     cursor: pointer;
     color: inherit;
-    color: var(--color-black);
+    /* color: var(--color-black); */
 }
 
 .nav.nav--dark > .nav__title {
@@ -1177,19 +1173,19 @@
 /* Typography  */
 
 .h1 {
-    font-size: 1.7rem;
+    font-size: 2rem;
 }
 
 .h2 {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
 }
 
 .h3 {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
 }
 
 .h4 {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
 }
 
 .h5 {
@@ -1198,6 +1194,14 @@
 
 .h6 {
     font-size: 0.7rem;
+}
+
+.heading--large {
+    font-size: 3rem;
+}
+
+.heading--extra-large {
+    font-size: 4rem;
 }
 
 .heading--lead {
@@ -1211,4 +1215,11 @@
 
 .text--muted {
     color: var(--color-dark-grey);
+}
+
+.section--centered {
+    /* display: flex; */
+    margin: auto;
+    align-items: center;
+    text-align: center;    
 }
