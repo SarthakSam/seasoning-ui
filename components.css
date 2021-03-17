@@ -982,9 +982,12 @@
     display: flex;
     list-style: none;
     justify-content: space-around;
-    margin-right: auto;
     align-items: center;
     color: inherit;
+}
+
+.nav__list:first-child {
+    margin-right: auto;
 }
 
 .nav__item {
