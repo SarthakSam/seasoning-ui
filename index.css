@@ -1,3 +1,4 @@
+
 :root {
     --app-color: var(--color-violet);
 }
@@ -5,9 +6,9 @@
 .root {
     display: grid;
     grid-template-columns: 1fr 15fr 1fr;
-    padding-top: 2em;
+    /* padding-top: 1em; */
     grid-template-areas: ". . ." 
-                         ". nav ."
+                         "nav nav nav"
                          ". component-header ."
                          ". controls-container ."
                          ". typography-container ."
@@ -17,17 +18,25 @@
                          ". visualizations-container .";
 }
 
-.nav--basic {
-    display: flex;
-    justify-content: space-between;
+.nav.nav--custom {
+    padding: 0.7em 1em;
     grid-area: nav;
+    border-bottom: 1px solid var(--color-grey);
+    box-shadow: 0 0 1px rgb(67 90 111 / 47%), 0 2px 4px -2px rgb(67 90 111 / 30%);
 }
 
-.nav--basic__list {
-    display: flex;
-    list-style: none;
-    color: inherit;
+.nav--custom .active {
+    /* color: w; */
 }
+
+.nav .nav__content {
+    background-color: white;
+}
+
+/* .nav > .nav__content > .nav__list {
+    margin: 0 auto;
+} */
+
 
 .component-header {
     grid-area: component-header;

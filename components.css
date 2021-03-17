@@ -1054,7 +1054,7 @@
 
     .nav__list {
         display: block;
-        margin: auto;
+        margin: 0 auto;
     }
 
     .nav__item {

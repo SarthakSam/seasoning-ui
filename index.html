@@ -9,21 +9,36 @@
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="index1.css">
     <link rel="stylesheet" href="components.css">
+    <link rel="stylesheet" href="./components/index.css">
 </head>
 <body>
     <div class="root">
-        <nav class="nav--basic text-violet">
-            <a href="#" class="nav__title ">SEASONING</a>
-            <ul class="nav--basic__list">
-                    <li class="nav__item">
-                        <a class="btn btn--violet">GET STARTED</a>   
+        <nav class="nav nav--custom">
+            <a href="#" class="nav__title">Brand</a>
+            <input type="checkbox" id="nav__toggler1">
+            <label for="nav__toggler1" class="nav__toggler--button">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </label>
+            <div class="nav__content">
+                <ul class="nav__list">
+                    <li class="nav__item active">
+                        <a href="" class="nav__link">Getting started</a>   
                     </li>
                     <li class="nav__item">
-                        <a class="">
-                            <i class="fa fa-search text-violet"></i>
-                        </a>   
+                        <a href="" class="nav__link">Components</a>
                     </li>
-                </ul>    
+                    <li class="nav__item">
+                        <a href="" class="nav__link">Docs</a>
+                    </li>
+                </ul>
+
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="" class="nav__link">Github</a>
+                    </li>
+                </ul>
+                
+            </div>
         </nav>
 
         <section class="component-header section--centered">
