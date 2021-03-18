@@ -9,3 +9,7 @@
     padding: 0;
     margin: 0;
 }
+
+:root {
+    --app-primary-color: rgba(16,112,202,.09);
+}
