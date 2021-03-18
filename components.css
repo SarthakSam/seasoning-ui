@@ -948,7 +948,11 @@
     /* background-color: white; */
 }
 
-#nav__toggler1, #nav__toggler2, #nav__toggler3, #nav__toggler4 {
+/* #nav__toggler1, #nav__toggler2, #nav__toggler3, #nav__toggler4 {
+    display: none;
+} */
+
+.nav__toggler {
     display: none;
 }
 
@@ -1054,7 +1058,9 @@
 
     .nav__list {
         display: block;
-        margin: 0 auto;
+        margin: 0.2em auto;
+        align-items: center;
+        text-align: center;
     }
 
     .nav__item {

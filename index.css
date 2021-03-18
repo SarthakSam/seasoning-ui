@@ -1,9 +1,9 @@
 
 :root {
-    --app-color: var(--color-violet);
+    --app-primary-color: rgba(16,112,202,.09);
 }
 
-.root {
+.components {
     display: grid;
     grid-template-columns: 1fr 15fr 1fr;
     /* padding-top: 1em; */
@@ -25,8 +25,16 @@
     box-shadow: 0 0 1px rgb(67 90 111 / 47%), 0 2px 4px -2px rgb(67 90 111 / 30%);
 }
 
-.nav--custom .active {
-    /* color: w; */
+@media screen and (max-width: 710px) {
+    .nav #nav--custom__toggler:checked ~ .nav__content {
+        height: 140px;
+        box-shadow: 0 0 1px rgb(67 90 111 / 47%), 0 2px 4px -2px rgb(67 90 111 / 30%);
+    }
+}
+
+.nav--custom .nav__item.active {
+    color: var(--color-blue);
+    background-color: var(--app-primary-color);
 }
 
 .nav .nav__content {
