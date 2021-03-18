@@ -10,11 +10,12 @@
     <link rel="stylesheet" href="index1.css">
     <link rel="stylesheet" href="components.css">
     <link rel="stylesheet" href="./components/index.css">
+    <!-- <link rel="stylesheet" href="./components/layout-primites.css"> -->
 </head>
 <body>
     <div class="components">
         <nav class="nav nav--custom">
-            <a href="#" class="nav__title">Seasoning</a>
+            <a href="#" class="nav__title">SEASONING</a>
             <input type="checkbox" id="nav--custom__toggler" class="nav__toggler">
             <label for="nav--custom__toggler" class="nav__toggler--button">
                 <i class="fa fa-bars" aria-hidden="true"></i>
@@ -22,35 +23,254 @@
             <div class="nav__content">
                 <ul class="nav__list">
                     <li class="nav__item active">
-                        <a href="" class="nav__link">Getting started</a>   
+                        <a href="" class="nav__link">GETTING STARTED</a>
                     </li>
                     <li class="nav__item">
-                        <a href="" class="nav__link">Components</a>
+                        <a href="" class="nav__link">COMPONENTS</a>
                     </li>
                     <li class="nav__item">
-                        <a href="" class="nav__link">Docs</a>
+                        <a href="" class="nav__link">DOCS</a>
                     </li>
                 </ul>
 
                 <ul class="nav__list">
                     <li class="nav__item">
-                        <a href="" class="nav__link">Github</a>
+                        <a href="" class="nav__link">GITHUB</a>
                     </li>
                 </ul>
                 
             </div>
         </nav>
 
-        <section class="component-header section--centered">
+        <section class="section--foundation">
+            <header class="section__header">
+                <h2 class="heading--lead">Foundation</h2>
+                <p class="text--lead">
+                    Styles and primitive components. Start here
+                </p>
+            </header>
+            <main class="section__main row">
+                <div class="card col-3">
+                    <div class="card__img">
+                        <img src="./assets/layout-primtives.png" alt="">
+                    </div>
+                    <div class="card__body">
+                        <p class="card__title">Layout Primitives</p>
+                    </div>
+                </div>
+                <div class="card col-3">
+                    <div class="card__img">
+                        <img src="./assets/typography.png" alt="">
+                    </div>
+                    <div class="card__body">
+                        <p class="card__title">Typography</p>
+                    </div>
+                </div>
+                <div class="card col-3">
+                    <div class="card__img">
+                        <img src="./assets/colors.png" alt="">
+                    </div>
+                    <div class="card__body">
+                        <p class="card__title">Colors</p>
+                    </div>
+                </div>
+                <!-- <div class="card col-3">
+                    <div class="card__img">
+                        <img src="./assets/layout-primtives.png" alt="">
+                    </div>
+                    <div class="card__body">
+                        <p class="card__title">Layout Primitives</p>
+                    </div>
+                </div> -->
+                
+            </main>
+        </section>
+
+        <section class="section--components">
+            <header class="section__header">
+                <h2 class="heading--lead">Components</h2>
+                <p class="text--lead">
+                    These are the building blocks of the applications,
+                using them makes our work a lot easier.
+                </p>
+
+            </header>
+             <main class="section__main ">
+               
+                <section class="row section--components__block">
+                    <p class="col-12 section--components__heading">BUTTONS AND ATOMIC ELEMENTS</p> 
+                    <div class="card col-3">
+                        <div class="card__img">
+                            <img src="./assets/buttons.png" alt="">
+                        </div>
+                        <div class="card__body">
+                            <p class="card__title">Button</p>
+                        </div>
+                    </div>
+                    <div class="card col-3">
+                        <div class="card__img">
+                            <img src="./assets/badges&pills.png" alt="">
+                        </div>
+                        <div class="card__body">
+                            <p class="card__title">Badge and Pill</p>
+                        </div>
+                    </div>
+                    <div class="card col-3">
+                        <div class="card__img">
+                            <img src="./assets/avatar.png" alt="">
+                        </div>
+                        <div class="card__body">
+                            <p class="card__title">Avatar</p>
+                        </div>
+                    </div>
+                </section>
+                
+                <section class="row section--components__block">
+                    <p class="col-12 section--components__heading">TEXT INPUTS AND FILE UPLOADING</p> 
+                    <div class="card col-3">
+                        <div class="card__img">
+                            <img src="./assets/text-input.png" alt="">
+                        </div>
+                        <div class="card__body">
+                            <p class="card__title">Text Input</p>
+                        </div>
+                    </div>
+                    <div class="card col-3">
+                        <div class="card__img">
+                            <img src="./assets/textarea.png" alt="">
+                        </div>
+                        <div class="card__body">
+                            <p class="card__title">Textarea</p>
+                        </div>
+                    </div>
+                    <div class="card col-3">
+                        <div class="card__img">
+                            <img src="./assets/filepicker.png" alt="">
+                        </div>
+                        <div class="card__body">
+                            <p class="card__title">Filepicker</p>
+                        </div>
+                    </div>
+                    <div class="card col-3">
+                        <div class="card__img">
+                            <img src="./assets/search-input.png" alt="">
+                        </div>
+                        <div class="card__body">
+                            <p class="card__title">search Input</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="row section--components__block">
+                    <p class="col-12 section--components__heading">SELECT AND DROPDOWN MENUS</p> 
+                    <div class="card col-3">
+                        <div class="card__img">
+                            <img src="./assets/select.png" alt="">
+                        </div>
+                        <div class="card__body">
+                            <p class="card__title">select</p>
+                        </div>
+                    </div>
+                    <div class="card col-3">
+                        <div class="card__img">
+                            <img src="./assets/select-menu.png" alt="">
+                        </div>
+                        <div class="card__body">
+                            <p class="card__title">Select Menu</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="row section--components__block">
+                    <p class="col-12 section--components__heading">Toggles</p> 
+                    <div class="card col-3">
+                        <div class="card__img">
+                            <img src="./assets/checkbox.png" alt="">
+                        </div>
+                        <div class="card__body">
+                            <p class="card__title">Checkbox</p>
+                        </div>
+                    </div>
+                    <div class="card col-3">
+                        <div class="card__img">
+                            <img src="./assets/radio.png" alt="">
+                        </div>
+                        <div class="card__body">
+                            <p class="card__title">Radio</p>
+                        </div>
+                    </div>
+                    <div class="card col-3">
+                        <div class="card__img">
+                            <div class="ratings__image">
+                            </div>
+                        </div>
+                        <div class="card__body">
+                            <p class="card__title">Rating</p>
+                        </div>
+                    </div>
+                    <div class="card col-3">
+                        <div class="card__img">
+                            <img src="./assets/switch.png" alt="">
+                        </div>
+                        <div class="card__body">
+                            <p class="card__title">Switch</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="row section--components__block">
+                    <p class="col-12 section--components__heading">FEEDBACK INDICATORS</p> 
+                    <div class="card col-3">
+                        <div class="card__img">
+                            <img src="./assets/toaster.png" alt="">
+                        </div>
+                        <div class="card__body">
+                            <p class="card__title">Toaster</p>
+                        </div>
+                    </div>
+                    <div class="card col-3">
+                        <div class="card__img">
+                            <img src="./assets/alert.png" alt="">
+                        </div>
+                        <div class="card__body">
+                            <p class="card__title">Alert</p>
+                        </div>
+                    </div>
+                    <div class="card col-3">
+                        <div class="card__img">
+                            <img src="./assets/spinner.png" alt="">
+                        </div>
+                        <div class="card__body">
+                            <p class="card__title">Spinner</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="row section--components__block">
+                    <p class="col-12 section--components__heading">OTHERS</p> 
+                    <div class="card col-3">
+                        <div class="card__img">
+                            <img src="./assets/popup.png" alt="">
+                        </div>
+                        <div class="card__body">
+                            <p class="card__title">Popup</p>
+                        </div>
+                    </div>
+                </section>
+
+            </main>
+        </section>
+
+        <!-- <section class="component-header section--centered">
             <h1 class="heading--extra-large">Components</h1>
             <h2 class="h1">These are the building blocks of the applications,
                 using them makes our work a lot easier.
             </h2>
-        </section>
+        </section> -->
 
-        <section class="components-section controls-container">
+        <!-- <section class="components-section controls-container">
             <header class="components-header">
-                <h1 class="h1">Controls</h1>
+                <h1 class="h1">Foundation</h1>
             </header>
             <main class="components-container">
                 <div class="component-card">Compoennt1</div>
@@ -130,7 +350,7 @@
                 <div class="component-card">Compoennt1</div>
                 <div class="component-card">Compoennt1</div>
             </main>
-        </section>
+        </section> -->
 
     </div>
 </body>

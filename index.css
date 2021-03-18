@@ -5,17 +5,13 @@
 
 .components {
     display: grid;
-    grid-template-columns: 1fr 15fr 1fr;
+    grid-template-columns: 1fr 10fr 1fr;
     /* padding-top: 1em; */
     grid-template-areas: ". . ." 
                          "nav nav nav"
-                         ". component-header ."
-                         ". controls-container ."
-                         ". typography-container ."
-                         ". color-container ."
-                         ". layout-container ."
-                         ". input-container ."
-                         ". visualizations-container .";
+                         ". foundation-section ."
+                         ". components-section ."
+                         ". footer .";
 }
 
 .nav.nav--custom {
@@ -45,57 +41,40 @@
     margin: 0 auto;
 } */
 
-
-.component-header {
-    grid-area: component-header;
-    padding: 1em;
-}
-
-.components-section {
-    padding: 1em;
+.section--foundation {
+    grid-area: foundation-section;
     margin: 1em 0;
 }
 
-.components-header {
-    padding: 1.5em 0;
+.section--components {
+    grid-area: components-section;
+    margin: 1em 0;
 }
 
-.components-container {
-    display: grid;
-    grid-auto-rows: 192px;
-    grid-gap: 2em;
-    grid-template-columns: repeat(auto-fill, minmax(min(192px, 100%), 350px));
+.section__header {
+    padding: 1em;
 }
 
-.component-card {
-    /* height: 130px;
-    width: 320px; */
-    border-radius: 0.5em;
-    border: 1px solid var(--color-red);
-    background: var(--app-color);  
-    /* margin: 2em auto;  */
+.section__main .card {
+    border: none;
+    box-shadow: none;
 }
 
-.controls-container {
-    grid-area: controls-container;
+.section--components .section--components__block {
+    margin: 1em 0;
 }
 
-.typography-container {
-    grid-area: typography-container;
+.section--components .section--components__heading {
+    padding: 0 0.5em;
+    margin: 0 0.5em;
+    font-weight: 500;
+    color: var(--color-dark-grey);
 }
 
-.color-container {
-    grid-area: color-container;
-}
-
-.layout-container {
-    grid-area: layout-container;
-}
-
-.input-container {
-    grid-area: input-container;
-}
-
-.visualizations-container {
-    grid-area: visualizations-container;
+.ratings__image {
+    background-image: url('./assets/rating.svg');
+    background-size: cover;
+    background-color: var(--app-primary-color);
+    width: 100%;
+    height: 177px;
 }
