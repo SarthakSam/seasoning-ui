@@ -60,6 +60,10 @@
     box-shadow: none;
 }
 
+.section__main .card:hover {
+    background-color: var(--app-primary-color);
+}
+
 .section--components .section--components__block {
     margin: 1em 0;
 }
@@ -72,9 +76,5 @@
 }
 
 .ratings__image {
-    background-image: url('./assets/rating.svg');
-    background-size: cover;
     background-color: var(--app-primary-color);
-    width: 100%;
-    height: 177px;
 }
