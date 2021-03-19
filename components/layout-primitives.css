@@ -15,8 +15,8 @@
 }
 
 .col-2 {
-    flex: 0 0 16.6666%;
-    max-width: 16.6666%; 
+    flex: 0 0 calc(16.6666% - 1em);
+    max-width: calc(16.6666% - 1em);
     padding: 0.5em;
     margin: 0.5em;
 }
@@ -31,9 +31,6 @@
 .col-4 {
     flex: 0 0 calc(33.3333% - 1em);
     max-width: calc(33.3333% - 1em);
-
-    flex: 0 0 33.3333%;
-    max-width: 33.3333%;
     padding: 0.5em;
     margin: 0.5em;
 }
@@ -103,8 +100,8 @@
     }
     
     .col-xl-2 {
-        flex: 0 0 16.6666%;
-        max-width: 16.6666%; 
+        flex: 0 0 calc(16.6666% - 1em);
+        max-width: calc(16.6666% - 1em);
         padding: 0.5em;
         margin: 0.5em;
     }
@@ -189,8 +186,8 @@
     }
     
     .col-lg-2 {
-        flex: 0 0 16.6666%;
-        max-width: 16.6666%; 
+        flex: 0 0 calc(16.6666% - 1em);
+        max-width: calc(16.6666% - 1em);
         padding: 0.5em;
         margin: 0.5em;
     }
@@ -276,8 +273,8 @@
     }
     
     .col-md-2 {
-        flex: 0 0 16.6666%;
-        max-width: 16.6666%; 
+        flex: 0 0 calc(16.6666% - 1em);
+        max-width: calc(16.6666% - 1em);
         padding: 0.5em;
         margin: 0.5em;
     }
@@ -362,8 +359,8 @@
     }
     
     .col-sm-2 {
-        flex: 0 0 16.6666%;
-        max-width: 16.6666%; 
+        flex: 0 0 calc(16.6666% - 1em);
+        max-width: calc(16.6666% - 1em);
         padding: 0.5em;
         margin: 0.5em;
     }

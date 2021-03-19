@@ -69,3 +69,7 @@
     background: var(--color-black);
     padding: 0.5em;
 }
+
+.layout-primitives__block {
+    background-color: var(--app-primary-color);
+}
