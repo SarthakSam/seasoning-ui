@@ -41,16 +41,14 @@
     padding: 1em;
 }
 
-/* .color {
-    flex: 0 0 100px;
-    height: 40px;
-    margin: 10px;
-    border-radius: 5px;
-} */
+.docs__section a {
+    text-decoration: none;
+}
 
-/* .docs__section div {
-    height: 500px;
-} */
+.docs__section a:hover:after {
+    content: '#';
+    color: var(--color-blue)
+}
 
 .card--colors .card__placeholder {
     height: 50px;
@@ -58,4 +56,9 @@
 
 .card--colors {
     text-align: center;
+}
+
+.inverted-buttons-container {
+    background: var(--color-black);
+    padding: 0.5em;
 }

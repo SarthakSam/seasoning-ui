@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
     <link rel="stylesheet" href="docs.css">
     <!-- <link rel="stylesheet" href="index1.css"> -->
-    <link rel="stylesheet" href="components.css">
+    <!-- <link rel="stylesheet" href="components.css"> -->
     <link rel="stylesheet" href="./components/index.css">
 </head>
 <body>
@@ -43,21 +43,21 @@
 
         <main class="docs__content">
             <section class="docs__section" id="layout-primitives">
-                <h3 class="h3"><a href="#layout-primitives">Layout Primitives</a></h3>
+                <h2 class="h2"><a href="#layout-primitives">Layout Primitives</a></h2>
                 <div>
 
                 </div>
             </section>
 
             <section class="docs__section" id="typography">
-                <h3 class="h3"><a href="#typography">Typography</a></h3>
+                <h2 class="h2"><a href="#typography">Typography</a></h2>
                 <div>
 
                 </div>
             </section>
 
             <section class="docs__section" id="colors">
-                <h3 class="h3"><a href="#colors">Colors</a></h3>
+                <h2 class="h2"><a href="#colors">Colors</a></h2>
                 <div class="row">
                     <div class="card col-2 col-sm-3 p-0 card--colors">
                         <div class="card__placeholder bg-red"></div>
@@ -143,119 +143,228 @@
             </section>
 
             <section class="docs__section" id="button">
-                <h3 class="h3"><a href="#button">Button</a></h3>
-                <div>
+                <h2 class="h2"><a href="#button">Button</a></h2>
+                <div class="row">
+                    <div class="col-12">
+                        <h3>Simple Button</h3>
+                        <br>
+                        <button class="btn">Submit</button>
+                    </div>
+
+                    <div class="col-12">
+                        <h3>Emphasized Buttons</h3>
+                        <p class="text--lead"> A button can be formatted to show different levels of emphasis</p>
+                        <br>
+                        <button class="btn btn--primary">Primary</button>
+                        <button class="btn btn--secondary">Secondary</button>
+                        <button class="btn btn--success">success</button>
+                        <button class="btn btn--warning">warning</button>
+                        <button class="btn btn--light">light</button>
+                        <button class="btn btn--red">red</button>
+                        <button class="btn btn--darkBlue">darkBlue</button>
+                        <button class="btn btn--darkGreen">darkGreen</button>
+                        <button class="btn btn--purple">purple</button>
+                        <button class="btn btn--violet">violet</button>
+                        <button class="btn btn--pink">pink</button>
+                        <button class="btn btn--teal">teal</button>
+                    </div>
+
+                    <div class="col-12">
+                        <h3>Icon Button</h3>
+                        <p class="text--lead">A button can also have an icon</p>
+                        <br>
+                        <button class="btn btn__icon">
+                            <i class="fa fa-heart" aria-hidden="true"></i>
+                        </button>
+            
+                        <button class="btn btn__icon btn--primary">
+                            <i class="fa fa-motorcycle" aria-hidden="true"></i>
+                        </button>
+            
+                        <button class="btn btn__icon btn--purple">
+                            <i class="fa fa-mountain" aria-hidden="true"></i>
+                        </button>
+            
+                        <button class="btn btn__icon btn--danger">
+                            <i class="fa fa-newspaper" aria-hidden="true"></i>
+                        </button>
+                    </div>
+
+                    <div class="col-12">
+                        <h3>Outline Buttons</h3>
+                        <p class="text--lead">These buttons are less pronounced</p>
+                        <br>
+                        <button class="btn btn--outline">Outline</button>
+                        <button class="btn btn--outline btn--primary">Primary And outline</button>
+                        <button class="btn btn--outline btn--secondary">Secondary And outline</button>
+                        <button class="btn btn--outline btn--success">success And outline</button>
+                        <button class="btn btn--outline btn--warning">warning And outline</button>
+                        <button class="btn btn--outline btn--light">light And outline</button>
+                        <button class="btn btn--outline btn--red">red And outline</button>
+                        <button class="btn btn--outline btn--darkBlue">darkBlue And outline</button>
+                        <button class="btn btn--outline btn--darkGreen">darkGreen And outline</button>
+                        <button class="btn btn--outline btn--purple">purple And outline</button>
+                        <button class="btn btn--outline btn--violet">violet And outline</button>
+                        <button class="btn btn--outline btn--pink">pink And outline</button>
+                        <button class="btn btn--outline btn--teal">teal And outline</button>
+                    </div>
+
+                    <div class="col-12">
+                        <h3 class="h3 inverted-buttons-container__h3">Inverted Buttons</h3>
+                        <br>
+                        <div class="inverted-buttons-container">
+                            <button class="btn btn--inverted">Inverted</button>
+                            <button class="btn btn--inverted btn--primary">Inverted and primary</button>
+                            <button class="btn btn--inverted btn--secondary">Inverted and secondary</button>
+                            <button class="btn btn--inverted btn--success">Inverted and success</button>
+                            <button class="btn btn--inverted btn--warning">Inverted and warning</button>
+                            <button class="btn btn--inverted btn--light">Inverted and light</button>
+                            <button class="btn btn--inverted btn--red">Inverted and red</button>
+                            <button class="btn btn--inverted btn--darkBlue">Inverted and darkBlue</button>
+                            <button class="btn btn--inverted btn--darkGreen">Inverted and darkGreen</button>
+                            <button class="btn btn--inverted btn--violet">Inverted and violet</button>
+                            <button class="btn btn--inverted btn--pink">Inverted and pink</button>
+                            <button class="btn btn--inverted btn--teal">Inverted and teal</button>
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <h3 class="h3 inverted-buttons-container__h3">Inverted and outline Buttons</h3>
+                        <br>
+                        <div class="inverted-buttons-container">
+                            <button class="btn btn--inverted btn--outline">Inverted and outline</button>
+                            <button class="btn btn--inverted btn--primary btn--outline">Inverted, outline and primary</button>
+                            <button class="btn btn--inverted btn--secondary btn--outline">Inverted, outline and secondary</button>
+                            <button class="btn btn--inverted btn--success btn--outline">Inverted, outline and success</button>
+                            <button class="btn btn--inverted btn--warning btn--outline">Inverted, outline and warning</button>
+                            <button class="btn btn--inverted btn--light btn--outline">Inverted, outline and light</button>
+                            <button class="btn btn--inverted btn--red btn--outline">Inverted, outline and red</button>
+                            <button class="btn btn--inverted btn--darkBlue btn--outline">Inverted, outline and darkBlue</button>
+                            <button class="btn btn--inverted btn--darkGreen btn--outline">Inverted, outline and darkGreen</button>
+                            <button class="btn btn--inverted btn--violet btn--outline">Inverted, outline and violet</button>
+                            <button class="btn btn--inverted btn--pink btn--outline">Inverted, outline and pink</button>
+                            <button class="btn btn--inverted btn--teal btn--outline">Inverted, outline and teal</button>
+                        </div>
+                    </div>
+
+                    <!-- <div class="col-12">
+                        <h3>Focusable</h3>
+                        <br>
+                        <button class="btn btn--focusable">Focusable</button>
+                        <button class="btn btn--primary btn--focusable">Focusable</button>
+                        <button class="btn btn--outline btn--primary btn--focusable">Focusable</button>
+                    </div> -->
 
                 </div>
             </section>
 
             <section class="docs__section" id="badge-and-pill">
-                <h3 class="h3"><a href="#badge-and-pill">Badge and Pill</a></h3>
+                <h2 class="h2"><a href="#badge-and-pill">Badge and Pill</a></h2>
                 <div>
 
                 </div>
             </section>
 
             <section class="docs__section" id="avatar">
-                <h3 class="h3"><a href="#avatar">Avatar</a></h3>
+                <h2 class="h2"><a href="#avatar">Avatar</a></h2>
                 <div>
 
                 </div>
             </section>
 
             <section class="docs__section" id="text-input">
-                <h3 class="h3"><a href="#text-input">Text Input</a></h3>
+                <h2 class="h2"><a href="#text-input">Text Input</a></h2>
                 <div>
 
                 </div>
             </section>
 
             <section class="docs__section" id="text-area">
-                <h3 class="h3"><a href="#text-area">Text Area</a></h3>
+                <h2 class="h2"><a href="#text-area">Text Area</a></h2>
                 <div>
 
                 </div>
             </section>
 
             <section class="docs__section" id="file-picker">
-                <h3 class="h3"><a href="#file-picker">File Picker</a></h3>
+                <h2 class="h2"><a href="#file-picker">File Picker</a></h2>
                 <div>
 
                 </div>
             </section>
            
             <section class="docs__section" id="search-input">
-                <h3 class="h3"><a href="#search-input">Search Inout</a></h3>
+                <h2 class="h2"><a href="#search-input">Search Inout</a></h2>
                 <div>
 
                 </div>
             </section>
 
             <section class="docs__section" id="select">
-                <h3 class="h3"><a href="#select">Select</a></h3>
+                <h2 class="h2"><a href="#select">Select</a></h2>
                 <div>
 
                 </div>
             </section>
 
             <section class="docs__section" id="select-menu">
-                <h3 class="h3"><a href="#select-menu">Select Menu</a></h3>
+                <h2 class="h2"><a href="#select-menu">Select Menu</a></h2>
                 <div>
 
                 </div>
             </section>
 
             <section class="docs__section" id="checkbox">
-                <h3 class="h3"><a href="#checkbox">Checkbox</a></h3>
+                <h2 class="h2"><a href="#checkbox">Checkbox</a></h2>
                 <div>
 
                 </div>
             </section>
 
             <section class="docs__section" id="radio">
-                <h3 class="h3"><a href="#radio">Radio</a></h3>
+                <h2 class="h2"><a href="#radio">Radio</a></h2>
                 <div>
 
                 </div>
             </section>
 
             <section class="docs__section" id="rating">
-                <h3 class="h3"><a href="#rating">Rating</a></h3>
+                <h2 class="h2"><a href="#rating">Rating</a></h2>
                 <div>
 
                 </div>
             </section>
 
             <section class="docs__section" id="switch">
-                <h3 class="h3"><a href="#switch">Switch</a></h3>
+                <h2 class="h2"><a href="#switch">Switch</a></h2>
                 <div>
 
                 </div>
             </section>
 
             <section class="docs__section" id="toaster">
-                <h3 class="h3"><a href="#toaster">Toaster</a></h3>
+                <h2 class="h2"><a href="#toaster">Toaster</a></h2>
                 <div>
 
                 </div>
             </section>
 
             <section class="docs__section" id="alert">
-                <h3 class="h3"><a href="#alert">Alert</a></h3>
+                <h2 class="h2"><a href="#alert">Alert</a></h2>
                 <div>
 
                 </div>
             </section>
 
             <section class="docs__section" id="spinner">
-                <h3 class="h3"><a href="#spinner">Spinner</a></h3>
+                <h2 class="h2"><a href="#spinner">Spinner</a></h2>
                 <div>
 
                 </div>
             </section>
 
             <section class="docs__section" id="popup">
-                <h3 class="h3"><a href="#popup">Popup</a></h3>
+                <h2 class="h2"><a href="#popup">Popup</a></h2>
                 <div>
 
                 </div>

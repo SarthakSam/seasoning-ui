@@ -21,7 +21,7 @@
     --color-light-grey: #f8f9fa;
 
     --font-color: rgba(0, 0, 0, 0.7);
-    --primary-color: var(--color-blue);
+    /* --primary-color: var(--color-blue); */
 }
 
 .bg-red {   

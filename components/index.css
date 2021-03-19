@@ -2,6 +2,7 @@
 
 @import url('./colors.css');
 @import url('./layout-primitives.css');
+@import url('./buttons.css');
 
 * {
     font-family: 'Dosis', sans-serif;
