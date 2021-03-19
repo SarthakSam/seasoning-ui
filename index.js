@@ -1,9 +1,3 @@
-// document.addEventListener('click', (event) => {
-//     if(event.target.classList.contains("dropdown__toggle")) {
-//         event.target.classList.toggle("active")
-//     }
-// })
-
 window.onload = () => {
     document.querySelector("#small-popup-open-btn").onclick = () => {
         document.querySelector("#small-popup").classList.add("active");
@@ -21,10 +15,10 @@ window.onload = () => {
     }
 
     document.querySelector("#popup-open-btn").onclick = () => {
-        document.querySelector("#popup").classList.add("active");
-        let closeButtons = document.querySelectorAll("#popup .popup__close");
+        document.querySelector("#medium-popup").classList.add("active");
+        let closeButtons = document.querySelectorAll("#medium-popup .popup__close");
         for(let button of closeButtons) {
-            button.addEventListener('click', closePopup.bind(null, "popup"));
+            button.addEventListener('click', closePopup.bind(null, "medium-popup"));
         }
     }
 
