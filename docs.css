@@ -41,6 +41,21 @@
     padding: 1em;
 }
 
-.docs__section div {
+/* .color {
+    flex: 0 0 100px;
+    height: 40px;
+    margin: 10px;
+    border-radius: 5px;
+} */
+
+/* .docs__section div {
     height: 500px;
+} */
+
+.card--colors .card__placeholder {
+    height: 50px;
+}
+
+.card--colors {
+    text-align: center;
 }

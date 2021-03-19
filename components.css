@@ -211,6 +211,10 @@
     width: 100%;
 }
 
+.card__placeholder {
+    width: 100%;
+}
+
 .card__body {
     padding: 15px;
 }
