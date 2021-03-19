@@ -7,6 +7,7 @@
 @import url('./popup.css');
 @import url('./rating.css');
 @import url('./typography.css');
+@import url('./select-select-menu.css');
 
 * {
     font-family: 'Dosis', sans-serif;

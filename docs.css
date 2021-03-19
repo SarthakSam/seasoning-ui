@@ -41,6 +41,13 @@
     padding: 1em;
 }
 
+.docs__section {
+    margin: 2em 0;
+    border: 1px solid var(--color-grey);
+    box-shadow: 5px 5px 3px var(--color-light-grey);
+    padding: 0.5em;
+}
+
 .docs__section a {
     text-decoration: none;
 }
