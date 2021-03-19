@@ -331,7 +331,41 @@
 
             <section class="docs__section" id="rating">
                 <h2 class="h2"><a href="#rating">Rating</a></h2>
-                <div>
+                <div class="row">
+
+                    <div class="rating__container rating--heart col-12">
+                        <label class="rating__control" for="rating1"></label>
+                        <input class="rating__input" type="radio" name="rating" id="rating1">
+        
+                        <label class="rating__control" for="rating2"></label>                
+                        <input class="rating__input" type="radio" name="rating" id="rating2">
+                        
+                        <label class="rating__control" for="rating3"></label>
+                        <input class="rating__input" type="radio" name="rating" id="rating3">
+                        
+                        <label class="rating__control" for="rating4"></label>
+                        <input class="rating__input" type="radio" name="rating" id="rating4" checked>
+        
+                        <label class="rating__control" for="rating5"></label>
+                         <input class="rating__input" type="radio" name="rating" id="rating5">
+                    </div>
+        
+                    <div class="rating__container rating--star col-12">
+                        <label class="rating__control" for="ratingA"></label>
+                        <input class="rating__input" type="radio" name="rating1" id="ratingA" checked>
+        
+                        <label class="rating__control" for="ratingB"></label>                
+                        <input class="rating__input" type="radio" name="rating1" id="ratingB" >
+                        
+                        <label class="rating__control" for="ratingC"></label>
+                        <input class="rating__input" type="radio" name="rating1" id="ratingC">
+                        
+                        <label class="rating__control" for="ratingD"></label>
+                        <input class="rating__input" type="radio" name="rating1" id="ratingD">
+        
+                        <label class="rating__control" for="ratingE"></label>
+                         <input class="rating__input" type="radio" name="rating1" id="ratingE">
+                    </div>
 
                 </div>
             </section>
@@ -367,61 +401,68 @@
             <section class="docs__section" id="popup">
                 <h2 class="h2"><a href="#popup">Popup</a></h2>
                 <br>
-                <div>
+                <div class="row">
 
-                    <button type="button" class="btn btn--primary" id="small-popup-open-btn">small popup</button>
-                    <div class="popup__container popup--small" id="small-popup">
-                        <div class="popup">
-                            <div class="popup__header">
-                                <p class="popup__title">Popup Header</p>
-                                <i class="fa fa-times popup__close"></i>
-                            </div>
-                            <div class="popup__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, eaque.</div>
-                            <div class="popup__footer">
-                                <!-- <p class="footer__content">Please selest..</p> -->
-                                <div class="popup__footer__buttons">
-                                    <button class="btn btn--secondary popup__close">cancel</button>
-                                    <button class="btn btn--primary">submit</button>
+                    <div class="col-12">
+                        <button type="button" class="btn btn--primary" id="small-popup-open-btn">small popup</button>
+                        <div class="popup__container popup--small" id="small-popup">
+                            <div class="popup">
+                                <div class="popup__header">
+                                    <p class="popup__title">Popup Header</p>
+                                    <i class="fa fa-times popup__close"></i>
+                                </div>
+                                <div class="popup__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, eaque.</div>
+                                <div class="popup__footer">
+                                    <!-- <p class="footer__content">Please selest..</p> -->
+                                    <div class="popup__footer__buttons">
+                                        <button class="btn btn--secondary popup__close">cancel</button>
+                                        <button class="btn btn--primary">submit</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-        
-                    <button type="button" class="btn btn--primary" id="popup-open-btn">Open popup</button>
-                    <div class="popup__container" id="medium-popup">
-                        <div class="popup">
-                            <div class="popup__header">
-                                <p class="popup__title">Popup Header</p>
-                                <i class="fa fa-times popup__close"></i>
-                            </div>
-                            <div class="popup__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, eaque.</div>
-                            <div class="popup__footer">
-                                <!-- <p class="footer__content">Please selest..</p> -->
-                                <div class="popup__footer__buttons">
-                                    <button class="btn btn--secondary popup__close">cancel</button>
-                                    <button class="btn btn--primary">submit</button>
+                    
+                    <div class="col-12">
+                        <button type="button" class="btn btn--primary" id="popup-open-btn">Medium popup</button>
+                        <div class="popup__container" id="medium-popup">
+                            <div class="popup">
+                                <div class="popup__header">
+                                    <p class="popup__title">Popup Header</p>
+                                    <i class="fa fa-times popup__close"></i>
+                                </div>
+                                <div class="popup__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, eaque.</div>
+                                <div class="popup__footer">
+                                    <!-- <p class="footer__content">Please selest..</p> -->
+                                    <div class="popup__footer__buttons">
+                                        <button class="btn btn--secondary popup__close">cancel</button>
+                                        <button class="btn btn--primary">submit</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-        
-                    <button type="button" class="btn btn--primary" id="large-popup-open-btn">large popup</button>
-                    <div class="popup__container popup--large" id="large-popup">
-                        <div class="popup">
-                            <div class="popup__header">
-                                <p class="popup__title">Popup Header</p>
-                                <i class="fa fa-times popup__close"></i>
-                            </div>
-                            <div class="popup__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, eaque.</div>
-                            <div class="popup__footer">
-                                <!-- <p class="footer__content">Please selest..</p> -->
-                                <div class="popup__footer__buttons">
-                                    <button class="btn btn--secondary popup__close">cancel</button>
-                                    <button class="btn btn--primary">submit</button>
+                    
+                    <div class="col-12">
+                        <button type="button" class="btn btn--primary" id="large-popup-open-btn">large popup</button>
+                        <div class="popup__container popup--large" id="large-popup">
+                            <div class="popup">
+                                <div class="popup__header">
+                                    <p class="popup__title">Popup Header</p>
+                                    <i class="fa fa-times popup__close"></i>
+                                </div>
+                                <div class="popup__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, eaque.</div>
+                                <div class="popup__footer">
+                                    <!-- <p class="footer__content">Please selest..</p> -->
+                                    <div class="popup__footer__buttons">
+                                        <button class="btn btn--secondary popup__close">cancel</button>
+                                        <button class="btn btn--primary">submit</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    
 
                 </div>
             </section>

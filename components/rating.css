@@ -1,0 +1,33 @@
+.rating__container {
+    display: flex;
+    /* flex-direction: row-reverse; */
+}
+
+.rating__input {
+    display: none;
+}
+
+.rating__control::before {
+    font-family: Font Awesome\ 5 Free;
+}
+
+
+.rating__input:checked ~ .rating__control::before {
+    font-weight: 400;
+}
+
+.rating--heart .rating__control::before{
+    content: '\f004';
+    color: var(--color-pink);
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0 0.1em;
+}
+
+.rating--star .rating__control::before{
+    content: '\f005';
+    font-size: 1.5rem;
+    color: var(--color-yellow);
+    margin: 0 0.1em;
+    font-weight: 700;
+}
