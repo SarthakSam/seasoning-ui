@@ -73,3 +73,7 @@
 .layout-primitives__block {
     background-color: var(--app-primary-color);
 }
+
+#button .btn {
+    margin: 0.2em;
+}

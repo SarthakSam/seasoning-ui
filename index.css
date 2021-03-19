@@ -76,6 +76,16 @@
     color: var(--color-dark-grey);
 }
 
-.ratings__image {
+.ratings__imagex {
     background-color: var(--app-primary-color);
 }
+
+.images__images {
+    background-color: var(--app-primary-color);
+    height: 62%;
+}
+
+.images__images > img {
+    height: 100%;
+}
+

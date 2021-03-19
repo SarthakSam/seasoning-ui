@@ -8,6 +8,8 @@
 @import url('./rating.css');
 @import url('./typography.css');
 @import url('./select-select-menu.css');
+@import url('./badges\,pills&avatars.css');
+@import url('./input.css');
 
 * {
     font-family: 'Dosis', sans-serif;
