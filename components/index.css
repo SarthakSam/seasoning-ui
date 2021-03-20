@@ -22,3 +22,8 @@
 :root {
     --app-primary-color: rgba(16,112,202,.09);
 }
+
+.segment {
+    margin: 1.5em 0;
+    padding: 1em 0;
+}

@@ -2,7 +2,7 @@
     border: 1px solid var(--color-grey);
     display: inline-flex;
     font-size: 1em;
-    margin: 10px;
+    /* margin: 10px; */
     align-items: center;
     background: white;
 }
@@ -94,6 +94,23 @@
 .input.input--transparent {
     border: none;
     background: none;
+}
+
+.input.input--inverted {
+    border: none;
+    background: none;
+}
+
+.input.input--inverted > input {
+    color: var(--color-white);
+}
+
+.input.input--inverted > .input__label--basic {
+    color: var(--color-white);
+}
+
+.input.input--inverted > input::placeholder {
+    color: var(--color-dark-grey);
 }
 
 .input.input--transparent .input__label--basic {

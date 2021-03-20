@@ -331,128 +331,268 @@
                 <h2 class="h2"><a href="#text-input">Text Input</a></h2>
                 <div class="row">
 
-                    <div class="input">
-                        <input type="text" placeholder="Enter text">
+                    <div class="col-12">
+                        <div class="segment">
+                            <h3>Standard Input</h3>
+                        
+                            <br>
+                            <div class="input">
+                                <input type="text" placeholder="Enter text">
+                            </div>    
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <h2>States</h2>
+                        <br>
+                        <hr>
+                        <br>
+
+                        <div class="segment">
+                            <h3>Interacting</h3>
+                            <p class="text--lead">An input field can show a user is currently interacting with it</p>
+                            <br>
+                            <div class="input focus">
+                                <input type="text" placeholder="Enter text">
+                            </div>
+                        </div>
+                        
+                        <div class="segment">
+                            <h3>Disabled</h3>
+                            <p class="text--lead">An input field can show that it is disabled</p>
+                            <br>
+                            
+                            <div class="input disabled">
+                                <input type="text" placeholder="Enter text" tabindex="-1">
+                            </div>
+                            <br>
+                            <br>
+                            <div class="input input--icon disabled">
+                                <input type="text" placeholder="Enter text" tabindex="-1">
+                                <i class="fa fa-search"></i>
+                            </div>
+
+                        </div>
+
+                        <div class="segment">
+                            <h3>Error</h3>
+                            <p class="text--lead">An input field can show a user is currently interacting with it</p>
+                            <br>
+                            <div class="input error">
+                                <input type="text" placeholder="Enter text">
+                            </div> 
+                        </div>
                     </div>
         
-                    Interacting
-                    <div class="input focus">
-                        <input type="text" placeholder="Enter text">
+                    <div class="col-12">
+                        <h2>Variations</h2>
+                        <br>
+                        <hr>
+                        <br>
+
+                        <div class="segment">
+                            <h3>Icon</h3>
+                            <p class="text--lead"> An input can be formatted with an icon</p>
+                            <br>
+                            <div class="input input--icon">
+                                <input type="text" placeholder="Enter text">
+                                <i class="fa fa-search"></i>
+                            </div>
+
+                            <br>
+                            <br>
+
+                            <div class="input input--icon">
+                                <i class="fa fa-search"></i>
+                                <input type="text" placeholder="Enter text">
+                            </div>
+
+                        </div>
+                        
+                        <div class="segment">
+                            <h3>Labeled</h3>
+                            <p class="text--lead">An input can be formatted with a label</p>
+                            <br>
+                            
+                            <div class="input input--label">
+                                <div class="input__label input__label--prepend">http://</div>
+                                <input type="text" placeholder="Enter text">
+                            </div>
+
+                            <br>
+                            <br>
+                
+                            <div class="input input--label">
+                                <input type="text" placeholder="Enter text">
+                                <div class="input__label input__label--append">.com</div>
+                            </div>
+                            
+                            <br>
+                            <br>
+                
+                            <div class="input input--label error">
+                                <input type="text" placeholder="Enter text">
+                                <div class="input__label input__label--append">kg</div>
+                            </div>
+
+                            <br>
+                            <br>
+                
+                            <div class="input input--label">
+                                <div class="input__label input__label--prepend input__label--basic">http://</div>
+                                <input type="text" placeholder="Enter text">
+                            </div>
+
+                            <br>
+                            <br>
+                
+                            <div class="input input--label">
+                                <input type="text" placeholder="Enter text">
+                                <div class="input__label input__label--append input__label--basic">.com</div>
+                            </div>
+                
+
+                        </div>
+
+                        <div class="segment">
+                            <h3>Transparent/h3>
+                            <p class="text--lead">A transparent input has no background</p>
+                            <br>
+                            <div class="input input--transparent">
+                                <input type="text" placeholder="Search">
+                            </div>
+
+                            <br><br>
+
+                            <div class="input input--label input--transparent">
+                                <div class="input__label input__label--prepend input__label--basic">http://</div>
+                                <input type="text" placeholder="Enter text">
+                            </div>
+
+                            <br><br>
+                
+                            <div class="input input--label input--transparent">
+                                <input type="text" placeholder="Enter text">
+                                <div class="input__label input__label--append input__label--basic">.com</div>
+                            </div>
+
+                            <br><br>
+
+                            <div class="input input--label input--transparent">
+                                <div class="input__label input__label--prepend">http://</div>
+                                <input type="text" placeholder="Enter text">
+                            </div>
+
+                            <br><br>
+                
+                            <div class="input input--label input--transparent">
+                                <input type="text" placeholder="Enter text">
+                                <div class="input__label input__label--append">.com</div>
+                            </div>
+
+                        </div>
+
+                        <div class="segment">
+                            <h3>Inverted</h3>
+                            <p class="text--lead">An input can be formatted to appear on dark backgrounds</p>
+                            <br>
+                            <div class="row" style="background: var(--color-black);">
+
+                                <div class="col-12">
+                                    <div class="input">
+                                        <input type="text" placeholder="Search">
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="input input--label">
+                                        <input type="text" placeholder="Enter text">
+                                        <div class="input__label input__label--append">.com</div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-12">
+                                    <div class="input input--label input--inverted">
+                                        <div class="input__label input__label--prepend input__label--basic">http://</div>
+                                        <input type="text" placeholder="Enter text">
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="input input--label input--inverted">
+                                        <input type="text" placeholder="Enter text">
+                                        <div class="input__label input__label--append input__label--basic">.com</div>
+                                    </div>    
+                                </div>
+                                
+                                <div class="col-12">
+                                    <div class="input input--label input--inverted">
+                                        <div class="input__label input__label--prepend">http://</div>
+                                        <input type="text" placeholder="Enter text">
+                                    </div>
+                                </div>        
+                                
+                                <div class="col-12">
+                                    <div class="input input--label input--inverted">
+                                        <input type="text" placeholder="Enter text">
+                                        <div class="input__label input__label--append">.com</div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+
+
+                        </div>
+
+
+                        <div class="segment">
+                            <h3>Fluid</h3>
+                            <p class="text--lead">An input can take the size of its container</p>
+                            <br>
+                            
+                            <div class="input input--fluid">
+                                <input type="text" placeholder="Enter text">
+                            </div>
+
+                            <br><br>
+
+                            <div class="input input--fluid input--icon">
+                                <i class="fa fa-search"></i>
+                                <input type="text" placeholder="Enter text">
+                            </div>
+
+                        </div>
+
+                        <div class="segment">
+                            <h3>Size</h3>
+                            <p class="text--lead"> An input can vary in size</p>
+                            <br>
+
+                            <div class="input input--small input--icon">
+                                <i class="fa fa-search"></i>
+                                <input type="text" placeholder="Enter text">
+                            </div>
+
+                            <br><br>
+                            
+                            <div class="input input--medium input--icon">
+                                <i class="fa fa-search"></i>
+                                <input type="text" placeholder="Enter text">
+                            </div>
+                
+                            <br><br>
+
+                            <div class="input input--large input--icon">
+                                <i class="fa fa-search"></i>
+                                <input type="text" placeholder="Enter text">
+                            </div>
+
+                        </div>
+
+
                     </div>
         
-                    Disabled
-                    <div class="input disabled">
-                        <input type="text" placeholder="Enter text" tabindex="-1">
-                    </div>
-        
-                    Error
-                    <div class="input error">
-                        <input type="text" placeholder="Enter text">
-                    </div>
-        
-                    icons
-        
-                    <div class="input input--icon">
-                        <input type="text" placeholder="Enter text">
-                        <i class="fa fa-search"></i>
-                    </div>
-        
-                    <div class="input input--icon">
-                        <i class="fa fa-search"></i>
-                        <input type="text" placeholder="Enter text">
-                    </div>
-        
-                    Labeled
-                    An input can be formatted with a label
-        
-                    <div class="input input--label">
-                        <div class="input__label input__label--prepend">http://</div>
-                        <input type="text" placeholder="Enter text">
-                    </div>
-        
-                    <div class="input input--label">
-                        <input type="text" placeholder="Enter text">
-                        <div class="input__label input__label--append">.com</div>
-                    </div>
-        
-                    <div class="input input--label error">
-                        <input type="text" placeholder="Enter text">
-                        <div class="input__label input__label--append">kg</div>
-                    </div>
-        
-                    <div class="input input--label">
-                        <div class="input__label input__label--prepend input__label--basic">http://</div>
-                        <input type="text" placeholder="Enter text">
-                    </div>
-        
-                    <div class="input input--label">
-                        <input type="text" placeholder="Enter text">
-                        <div class="input__label input__label--append input__label--basic">.com</div>
-                    </div>
-        
-                    Transparent
-                    A transparent input has no background
-        
-                    <div class="input input--transparent">
-                        <input type="text" placeholder="Search">
-                    </div>
-        
-                    <div class="input input--label input--transparent">
-                        <div class="input__label input__label--prepend">http://</div>
-                        <input type="text" placeholder="Enter text">
-                    </div>
-        
-                    <div class="input input--label input--transparent">
-                        <input type="text" placeholder="Enter text">
-                        <div class="input__label input__label--append">.com</div>
-                    </div>
-        
-                    <div class="input input--label input--transparent">
-                        <div class="input__label input__label--prepend input__label--basic">http://</div>
-                        <input type="text" placeholder="Enter text">
-                    </div>
-        
-                    <div class="input input--label input--transparent">
-                        <input type="text" placeholder="Enter text">
-                        <div class="input__label input__label--append input__label--basic">.com</div>
-                    </div>
-        
-                    Fluid
-                    An input can take the size of its container
-                    
-                    <div class="input input--fluid">
-                        <input type="text" placeholder="Enter text">
-                    </div>
-        
-                    <div class="input input--fluid input--icon">
-                        <i class="fa fa-search"></i>
-                        <input type="text" placeholder="Enter text">
-                    </div>
-        
-                    <div class="input input--fluid input--label">
-                        <input type="text" placeholder="Enter text">
-                        <div class="input__label input__label--append">.com</div>
-                    </div>
-        
-                    Size
-                    An input can vary in size
-        
-                    <div class="input input--small input--icon">
-                        <i class="fa fa-search"></i>
-                        <input type="text" placeholder="Enter text">
-                    </div>
-        
-                    <div class="input input--medium input--icon">
-                        <i class="fa fa-search"></i>
-                        <input type="text" placeholder="Enter text">
-                    </div>
-        
-                    <div class="input input--large input--icon">
-                        <i class="fa fa-search"></i>
-                        <input type="text" placeholder="Enter text">
-                    </div>
-        
-                    <div class="input">
+                    <!-- <div class="input">
                         <input type="email" placeholder="Enter text">
                     </div>
         
@@ -462,7 +602,7 @@
         
                     <div class="input">
                         <input type="datetime" placeholder="Enter text">
-                    </div>
+                    </div> -->
 
                 </div>
             </section>
