@@ -10,6 +10,7 @@
 @import url('./select-select-menu.css');
 @import url('./badges\,pills&avatars.css');
 @import url('./input.css');
+@import url('./spinner.css');
 
 * {
     font-family: 'Dosis', sans-serif;

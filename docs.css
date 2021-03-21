@@ -48,6 +48,10 @@
     padding: 0.5em;
 }
 
+.docs__section > h2 {
+    font-size: 2.2rem;
+}
+
 .docs__section a {
     text-decoration: none;
 }
