@@ -17,7 +17,7 @@
 
 @media screen and (max-width: 710px) {
     .nav #nav--custom__toggler:checked ~ .nav__content {
-        height: 140px;
+        height: 120px;
         box-shadow: 0 0 1px rgb(67 90 111 / 47%), 0 2px 4px -2px rgb(67 90 111 / 30%);
     }
 }
@@ -56,10 +56,6 @@
 .home__intro__buttons > a {
     margin: 1em 1em 0 0 ;
     text-decoration: none;
-}
-
-.home__intro__buttons > a.btn--secondary:hover > i {
-    color: white;
 }
 
 .home__features * {
