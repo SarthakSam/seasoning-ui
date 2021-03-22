@@ -9,11 +9,21 @@
                          ". footer .";
 }
 
+.nav-container {
+    position: relative;
+    grid-area: nav;
+    height: 60px;
+}
+
 .nav.nav--custom {
     padding: 0.7em 1em;
-    grid-area: nav;
+    /* grid-area: nav; */
     border-bottom: 1px solid var(--color-grey);
     box-shadow: 0 0 1px rgb(67 90 111 / 47%), 0 2px 4px -2px rgb(67 90 111 / 30%);
+    position: fixed;
+    width: 100%;
+    z-index: 99999;
+    background-color: white;
 }
 
 @media screen and (max-width: 710px) {
@@ -47,10 +57,10 @@
 }
 
 .docs__section {
-    margin: 6em 0;
+    margin: 5em 0;
     /* border: 1px solid var(--color-grey); */
     box-shadow: 5px 5px 3px var(--color-light-grey);
-    padding: 0.5em;
+    padding: 1.5em;
 }
 
 .docs__section > h2 {
