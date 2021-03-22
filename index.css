@@ -31,32 +31,78 @@
     flex-direction: column;
 }
 
-.home__intro {
+.home__intro > div{
     display: flex;
     align-items: center;
-    margin: 3em auto;
+    margin: 6.5em auto;
 }
 
 .home__intro__buttons {
     margin: 1.8em 0;
 }
 
-.home__intro__buttons > button {
+.home__intro__buttons > a {
     margin: 0 1em 0 0 ;
+    text-decoration: none;
 }
 
-.home__intro__buttons > button.btn--secondary:hover > i {
+.home__intro__buttons > a.btn--secondary:hover > i {
+    color: white;
+}
+
+.home__features * {
     color: white;
 }
 
 .home__features {
     background: #43af79;
+    padding: 2.5em 0;
+}
+
+.home__features > div {
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
 }
 
 .home__overview {
     background: var(--app-primary-color);
+    padding: 2em 0;
+}
+
+.home__overview > div {
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.home__overview .card {
+    border: none;
+    box-shadow: none;
+}
+
+.home__overview .card .card__image {
+    height: 40%;
+}
+
+.home__overview .card .card__title {
+    font-weight: 800;
+}
+
+.home__overview .card .card__description {
+    font-size: 1.2rem;
+}
+
+.home__footer * {
+    color: white;
 }
 
 .home__footer {
     background: var(--color-black);
+    padding: 1.5em 0;
+}
+
+.home__footer > div {
+    margin: auto;
+    text-align: center;
 }
