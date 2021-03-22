@@ -22,9 +22,6 @@
                 <div class="nav__content">
                     <ul class="nav__list">
                         <li class="nav__item">
-                            <a href="./getting-started.html" class="nav__link">GETTING STARTED</a>
-                        </li>
-                        <li class="nav__item">
                             <a href="./components.html" class="nav__link">COMPONENTS</a>
                         </li>
                         <li class="nav__item active">
@@ -44,6 +41,27 @@
         </div>
         
         <main class="docs__content">
+
+            <section class="docs__section" id="getting started">
+                <h2 class="h2"><a href="#getting-started">Getting Started</a></h2>
+                <div class="row">
+                    <div class="col-12 row">
+                        <h4 class="h4 col-12 m-0">For integrating via CDN -</h4>
+                        <p class="col-7 m-0 text--lead">Just add below link in your html file.</p>
+                    </div>
+
+                    <div class="col-12 row">
+                        <h4 class="h4 col-12 m-0">For integrating via locally downloaded file -</h4>
+                        <p class="col-7 m-0 text--lead">Simply click the download button and paste the file in your css directory.</p>
+                        <div class="col-2 m-0"></div>
+                        <div class="col-3 m-0">
+                            <a href="./components/index.css" class="btn btn--primary" download="seasoning">Download</a>
+                        </div>
+                            
+                    </div>
+                </div>
+            </section>
+
             <section class="docs__section" id="layout-primitives">
                 <h2 class="h2"><a href="#layout-primitives">Layout Primitives</a></h2>
                 <div class="row">
@@ -760,7 +778,178 @@
 
             <section class="docs__section" id="navbar">
                 <h2 class="h2"><a href="#navbar">Navbar</a></h2>
-                <div>
+                <div class="row">
+
+                    <div class="col-12 m-0 p-0">
+                        <nav class="nav">
+                            <a href="#" class="nav__title">Brand</a>
+                            <input type="checkbox" id="nav__toggler1" class="nav__toggler">
+                            <label for="nav__toggler1" class="nav__toggler--button">
+                                <i class="fa fa-bars" aria-hidden="true"></i>
+                            </label>
+                            <div class="nav__content">
+                                <ul class="nav__list">
+                                    <li class="nav__item active">
+                                        <a href="" class="nav__link">Home</a>   
+                                    </li>
+                                    <li class="nav__item">
+                                        <a href="" class="nav__link">Link</a>
+                                    </li>
+                                    <li class="nav__item dropdown" tabindex="0">
+                                            <button class="dropdown__toggle btn" type="button">DropDown</button>
+                                            <div class="dropdown__menu">
+                                                <a href="#" class="dropdown__item">Something 1</a>
+                                                <a href="#" class="dropdown__item">Something 2 </a>
+                                                <a href="#" class="dropdown__item">Something 3</a>
+                                                <div class="dropdown__divider"></div>
+                                                <a href="#" class="dropdown__item">Something else here</a>
+                                            </div>
+                                    </li>
+                                    <li class="nav__item disabled">
+                                        <a href="" class="nav__link">Disabled</a>
+                                    </li>
+                                </ul>
+            
+                                <ul class="nav__list">
+                                    <form action="" class="nav__form">
+                                        <div class="input input--small">
+                                            <input type="text" placeholder="Search">
+                                        </div>            
+                                        <button type="button" class="btn btn--success btn--inverted">Search</button>
+                                    </form>
+                                </ul>
+                                
+                            </div>
+                        </nav>
+                    </div>
+                    
+                    <div class="col-12 m-0 p-0">
+                        <nav class="nav bg-blue text-white nav--dark">
+                            <a href="#" class="nav__title">Brand</a>
+                            <input type="checkbox" id="nav__toggler2"  class="nav__toggler">
+                            <label for="nav__toggler2" class="nav__toggler--button">
+                                <i class="fa fa-bars" aria-hidden="true"></i>
+                            </label>
+                            <div class="nav__content">
+                                <ul class="nav__list">
+                                    <li class="nav__item active">
+                                        <a href="" class="nav__link">Home</a>   
+                                    </li>
+                                    <li class="nav__item">
+                                        <a href="" class="nav__link">Link</a>
+                                    </li>
+                                    <li class="nav__item dropdown" tabindex="0">
+                                            <button class="dropdown__toggle btn" type="button">DropDown</button>
+                                            <div class="dropdown__menu">
+                                                <a href="#" class="dropdown__item">Something 1</a>
+                                                <a href="#" class="dropdown__item">Something 2 </a>
+                                                <a href="#" class="dropdown__item">Something 3</a>
+                                                <div class="dropdown__divider"></div>
+                                                <a href="#" class="dropdown__item">Something else here</a>
+                                            </div>
+                                    </li>
+                                    <li class="nav__item disabled">
+                                        <a href="" class="nav__link">Disabled</a>
+                                    </li>
+                                </ul>
+            
+                                <ul class="nav__list">
+                                    <form action="" class="nav__form">
+                                        <div class="input input--small">
+                                            <input type="text" placeholder="Search">
+                                        </div>            
+                                        <button type="button" class="btn btn--success btn--inverted">Search</button>
+                                    </form>
+                                    <!-- <li class="nav__item">
+                                        <a href="" class="nav__link">Link</a>
+                                    </li> -->
+                                </ul>
+            
+                                
+                            </div>
+                        </nav>
+                    </div>
+        
+                    <div class="col-12 m-0 p-0">
+                        <nav class="nav bg-black text-white nav--dark">
+                            <a href="#" class="nav__title">Brand</a>
+                            <input type="checkbox" name="" id="nav__toggler3"  class="nav__toggler">
+                            <label for="nav__toggler3" class="nav__toggler--button">
+                                <i class="fa fa-bars" aria-hidden="true"></i>
+                            </label>
+                            <div class="nav__content">
+                                <ul class="nav__list">
+                                    <li class="nav__item active">
+                                        <a href="" class="nav__link">Home</a>   
+                                    </li>
+                                    <li class="nav__item">
+                                        <a href="" class="nav__link">Link</a>
+                                    </li>
+                                    <li class="nav__item dropdown" tabindex="0">
+                                            <button class="dropdown__toggle btn" type="button">DropDown</button>
+                                            <div class="dropdown__menu">
+                                                <a href="#" class="dropdown__item">Something 1</a>
+                                                <a href="#" class="dropdown__item">Something 2 </a>
+                                                <a href="#" class="dropdown__item">Something 3</a>
+                                                <div class="dropdown__divider"></div>
+                                                <a href="#" class="dropdown__item">Something else here</a>
+                                            </div>
+                                    </li>
+                                    <li class="nav__item disabled">
+                                        <a href="" class="nav__link">Disabled</a>
+                                    </li>
+                                </ul>
+            
+                                <form action="" class="nav__form">
+                                    <div class="input input--small">
+                                        <input type="text" placeholder="Search">
+                                    </div>            
+                                    <button type="button" class="btn btn--success btn--inverted">Search</button>
+                                </form>
+                            </div>
+                        </nav>
+                    </div>
+                    
+                    <div class="col-12 m-0 p-0">
+
+                        <nav class="nav bg-light-green bg--dark">
+                            <a href="#" class="nav__title">Brand</a>
+                            <input type="checkbox" id="nav__toggler4"  class="nav__toggler">
+                            <label for="nav__toggler4" class="nav__toggler--button">
+                                <i class="fa fa-bars" aria-hidden="true"></i>
+                            </label>
+                            <div class="nav__content">
+                                <ul class="nav__list">
+                                    <li class="nav__item active">
+                                        <a href="" class="nav__link">Home</a>   
+                                    </li>
+                                    <li class="nav__item">
+                                        <a href="" class="nav__link">Link</a>
+                                    </li>
+                                    <li class="nav__item dropdown" tabindex="0">
+                                            <button class="dropdown__toggle btn" type="button">DropDown</button>
+                                            <div class="dropdown__menu">
+                                                <a href="#" class="dropdown__item">Something 1</a>
+                                                <a href="#" class="dropdown__item">Something 2 </a>
+                                                <a href="#" class="dropdown__item">Something 3</a>
+                                                <div class="dropdown__divider"></div>
+                                                <a href="#" class="dropdown__item">Something else here</a>
+                                            </div>
+                                    </li>
+                                    <li class="nav__item disabled">
+                                        <a href="" class="nav__link">Disabled</a>
+                                    </li>
+                                </ul>
+            
+                                <form action="" class="nav__form">
+                                    <div class="input input--small">
+                                        <input type="text" placeholder="Search">
+                                    </div>            
+                                    <button type="button" class="btn btn--success btn--inverted">Search</button>
+                                </form>
+                            </div>
+                        </nav>
+                    </div>
 
                 </div>
             </section>

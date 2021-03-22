@@ -28,7 +28,7 @@
 
 @media screen and (max-width: 710px) {
     .nav #nav--custom__toggler:checked ~ .nav__content {
-        height: 140px;
+        height: 120px;
         box-shadow: 0 0 1px rgb(67 90 111 / 47%), 0 2px 4px -2px rgb(67 90 111 / 30%);
     }
 }
@@ -38,7 +38,7 @@
     background-color: var(--app-primary-color);
 }
 
-.nav .nav__content {
+.nav.nav--custom .nav__content {
     background-color: white;
 }
 
@@ -61,6 +61,7 @@
     /* border: 1px solid var(--color-grey); */
     box-shadow: 5px 5px 3px var(--color-light-grey);
     padding: 1.5em;
+    /* background-color: var(--color-light-grey); */
 }
 
 .docs__section > h2 {
@@ -95,4 +96,56 @@
 
 #button .btn {
     margin: 0.2em;
+}
+
+@media screen and (max-width: 800px) {
+    #navbar .nav__toggler--button {
+        display: block;
+        font-size: 1.1rem;
+        cursor: pointer;
+    }
+
+    #navbar .nav.nav--dark > .nav__toggler--button > i {
+        color: white;
+    }
+
+    #navbar .nav__content {
+        height: 0;
+        position: absolute;
+        top: 100%;
+        background: inherit;
+        left: 0;
+        width: 100%;
+        transition: height .5s;
+        flex-direction: column;
+        align-items: center;
+        display: flex;
+        overflow: hidden;
+        z-index: 1000;
+    }
+
+    #navbar #nav__toggler1:checked ~ .nav__content, #navbar #nav__toggler2:checked ~ .nav__content, #navbar #nav__toggler3:checked ~ .nav__content, #navbar #nav__toggler4:checked ~ .nav__content {
+        height: 200px;
+        transition: height .5s;
+    }
+
+    #navbar .nav__list {
+        display: block;
+        margin: 0.2em auto;
+        align-items: center;
+        text-align: center;
+    }
+
+    #navbar .nav__item {
+        padding: 0.3em 1em;
+    }
+
+    #navbar .nav__form {
+       display: inline;
+    }
+
+    #navbar .nav {
+        justify-content: space-between;
+        padding: 0.5rem 1rem;
+    }
 }

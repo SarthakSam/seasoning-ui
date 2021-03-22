@@ -38,7 +38,7 @@
     background-color: var(--app-primary-color);
 }
 
-.nav .nav__content {
+.nav.nav--custom .nav__content {
     background-color: white;
 }
 
