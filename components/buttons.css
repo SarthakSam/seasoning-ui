@@ -382,3 +382,11 @@ background: transparent;
   border: 1px solid var(--color-teal);
   background: transparent;
 }
+
+.btn--fluid {
+    width: 100%;
+}
+
+.btn--lg {
+    padding: 1em 1.5em;
+}

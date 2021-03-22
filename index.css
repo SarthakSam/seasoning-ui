@@ -25,3 +25,38 @@
     height: 20px;
     width: 20px;
 }
+
+.home {
+    display: flex;
+    flex-direction: column;
+}
+
+.home__intro {
+    display: flex;
+    align-items: center;
+    margin: 3em auto;
+}
+
+.home__intro__buttons {
+    margin: 1.8em 0;
+}
+
+.home__intro__buttons > button {
+    margin: 0 1em 0 0 ;
+}
+
+.home__intro__buttons > button.btn--secondary:hover > i {
+    color: white;
+}
+
+.home__features {
+    background: #43af79;
+}
+
+.home__overview {
+    background: var(--app-primary-color);
+}
+
+.home__footer {
+    background: var(--color-black);
+}
