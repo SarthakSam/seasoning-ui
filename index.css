@@ -39,10 +39,12 @@
 
 .home__intro__buttons {
     margin: 1.5em 0;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .home__intro__buttons > a {
-    margin: 0 1em 0 0 ;
+    margin: 1em 1em 0 0 ;
     text-decoration: none;
 }
 
