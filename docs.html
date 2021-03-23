@@ -537,38 +537,70 @@
             <section class="docs__section" id="text-input">
                 <h2 class="h2"><a href="#text-input">Text Input</a></h2>
                 <div class="row">
-
                     <div class="col-12">
                         <div class="segment">
                             <h3>Standard Input</h3>
-                        
+
                             <br>
                             <div class="input">
                                 <input type="text" placeholder="Enter text">
                             </div>    
                         </div>
                     </div>
-
+                </div>
+                
+                <div class="row">
+                    <input type="checkbox" id="standard-input-visibility__btn" class="code-visibility-toggler">
                     <div class="col-12">
-                        <h2>States</h2>
-                        <br>
-                        <hr>
-                        <br>
+                        <label for="standard-input-visibility__btn" class="code-visibility__button">
+                            <i class="fa fa-code" aria-hidden="true"></i>
+                        </label>
+                    </div>
+                    <div class="col-12 code__container">
+                        <textarea class="code">
+                            <div class="input">
+                                <input type="text" placeholder="Enter text">
+                            </div> 
+                        </textarea>
+                    </div>
+                </div>
 
+                <div class="row">
+                    <div class="col-12">
                         <div class="segment">
-                            <h3>Interacting</h3>
+                            <h3>Interacting Input</h3>
                             <p class="text--lead">An input field can show a user is currently interacting with it</p>
                             <br>
                             <div class="input focus">
                                 <input type="text" placeholder="Enter text">
-                            </div>
+                            </div>    
                         </div>
-                        
+                    </div>
+                </div>
+
+                
+                <div class="row">
+                    <input type="checkbox" id="interacting-input-visibility__btn" class="code-visibility-toggler">
+                    <div class="col-12">
+                        <label for="interacting-input-visibility__btn" class="code-visibility__button">
+                            <i class="fa fa-code" aria-hidden="true"></i>
+                        </label>
+                    </div>
+                    <div class="col-12 code__container">
+                        <textarea class="code">
+                            <div class="input focus">
+                                <input type="text" placeholder="Enter text">
+                            </div> 
+                        </textarea>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
                         <div class="segment">
                             <h3>Disabled</h3>
                             <p class="text--lead">An input field can show that it is disabled</p>
                             <br>
-                            
                             <div class="input disabled">
                                 <input type="text" placeholder="Enter text" tabindex="-1">
                             </div>
@@ -578,25 +610,63 @@
                                 <input type="text" placeholder="Enter text" tabindex="-1">
                                 <i class="fa fa-search"></i>
                             </div>
-
                         </div>
+                    </div>
+                </div>
 
+                
+                <div class="row">
+                    <input type="checkbox" id="disabled-input-visibility__btn" class="code-visibility-toggler">
+                    <div class="col-12">
+                        <label for="disabled-input-visibility__btn" class="code-visibility__button">
+                            <i class="fa fa-code" aria-hidden="true"></i>
+                        </label>
+                    </div>
+                    <div class="col-12 code__container">
+                        <textarea class="code">
+                            <div class="input disabled">
+                                <input type="text" placeholder="Enter text" tabindex="-1">
+                            </div>
+                            <div class="input input--icon disabled">
+                                <input type="text" placeholder="Enter text" tabindex="-1">
+                                <i class="fa fa-search"></i>
+                            </div>
+                        </textarea>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
                         <div class="segment">
                             <h3>Error</h3>
-                            <p class="text--lead">An input field can show a user is currently interacting with it</p>
+                            <p class="text--lead">An input field can show a user if some validation error is present.</p>
                             <br>
                             <div class="input error">
                                 <input type="text" placeholder="Enter text">
                             </div> 
                         </div>
                     </div>
-        
-                    <div class="col-12">
-                        <h2>Variations</h2>
-                        <br>
-                        <hr>
-                        <br>
+                </div>
 
+                
+                <div class="row">
+                    <input type="checkbox" id="error-input-visibility__btn" class="code-visibility-toggler">
+                    <div class="col-12">
+                        <label for="error-input-visibility__btn" class="code-visibility__button">
+                            <i class="fa fa-code" aria-hidden="true"></i>
+                        </label>
+                    </div>
+                    <div class="col-12 code__container">
+                        <textarea class="code">
+                            <div class="input error">
+                                <input type="text" placeholder="Enter text">
+                            </div> 
+                        </textarea>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
                         <div class="segment">
                             <h3>Icon</h3>
                             <p class="text--lead"> An input can be formatted with an icon</p>
@@ -605,22 +675,44 @@
                                 <input type="text" placeholder="Enter text">
                                 <i class="fa fa-search"></i>
                             </div>
-
                             <br>
                             <br>
-
                             <div class="input input--icon">
                                 <i class="fa fa-search"></i>
                                 <input type="text" placeholder="Enter text">
                             </div>
-
                         </div>
-                        
+                    </div>
+                </div>
+
+                
+                <div class="row">
+                    <input type="checkbox" id="icon-input-visibility__btn" class="code-visibility-toggler">
+                    <div class="col-12">
+                        <label for="icon-input-visibility__btn" class="code-visibility__button">
+                            <i class="fa fa-code" aria-hidden="true"></i>
+                        </label>
+                    </div>
+                    <div class="col-12 code__container">
+                        <textarea class="code">
+                            <div class="input input--icon">
+                                <input type="text" placeholder="Enter text">
+                                <i class="fa fa-search"></i>
+                            </div>
+                            <div class="input input--icon">
+                                <i class="fa fa-search"></i>
+                                <input type="text" placeholder="Enter text">
+                            </div>
+                        </textarea>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
                         <div class="segment">
                             <h3>Labeled</h3>
                             <p class="text--lead">An input can be formatted with a label</p>
                             <br>
-                            
                             <div class="input input--label">
                                 <div class="input__label input__label--prepend">http://</div>
                                 <input type="text" placeholder="Enter text">
@@ -657,10 +749,46 @@
                                 <input type="text" placeholder="Enter text">
                                 <div class="input__label input__label--append input__label--basic">.com</div>
                             </div>
-                
-
                         </div>
+                    </div>
+                </div>
 
+                
+                <div class="row">
+                    <input type="checkbox" id="labelled-input-visibility__btn" class="code-visibility-toggler">
+                    <div class="col-12">
+                        <label for="labelled-input-visibility__btn" class="code-visibility__button">
+                            <i class="fa fa-code" aria-hidden="true"></i>
+                        </label>
+                    </div>
+                    <div class="col-12 code__container">
+                        <textarea class="code">
+                            <div class="input input--label">
+                                <div class="input__label input__label--prepend">http://</div>
+                                <input type="text" placeholder="Enter text">
+                            </div>
+                            <div class="input input--label">
+                                <input type="text" placeholder="Enter text">
+                                <div class="input__label input__label--append">.com</div>
+                            </div>
+                            <div class="input input--label error">
+                                <input type="text" placeholder="Enter text">
+                                <div class="input__label input__label--append">kg</div>
+                            </div>
+                           <div class="input input--label">
+                                <div class="input__label input__label--prepend input__label--basic">http://</div>
+                                <input type="text" placeholder="Enter text">
+                            </div>
+                            <div class="input input--label">
+                                <input type="text" placeholder="Enter text">
+                                <div class="input__label input__label--append input__label--basic">.com</div>
+                            </div>
+                        </textarea>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
                         <div class="segment">
                             <h3>Transparent</h3>
                             <p class="text--lead">A transparent input has no background</p>
@@ -696,9 +824,46 @@
                                 <input type="text" placeholder="Enter text">
                                 <div class="input__label input__label--append">.com</div>
                             </div>
-
                         </div>
+                    </div>
+                </div>
 
+                
+                <div class="row">
+                    <input type="checkbox" id="transparent-input-visibility__btn" class="code-visibility-toggler">
+                    <div class="col-12">
+                        <label for="transparent-input-visibility__btn" class="code-visibility__button">
+                            <i class="fa fa-code" aria-hidden="true"></i>
+                        </label>
+                    </div>
+                    <div class="col-12 code__container">
+                        <textarea class="code">
+                            <div class="input input--transparent">
+                                <input type="text" placeholder="Search">
+                            </div>
+                            <div class="input input--label input--transparent">
+                                <div class="input__label input__label--prepend input__label--basic">http://</div>
+                                <input type="text" placeholder="Enter text">
+                            </div>
+                            <div class="input input--label input--transparent">
+                                <input type="text" placeholder="Enter text">
+                                <div class="input__label input__label--append input__label--basic">.com</div>
+                            </div>
+                            <div class="input input--label input--transparent">
+                                <div class="input__label input__label--prepend">http://</div>
+                                <input type="text" placeholder="Enter text">
+                            </div>
+                            <div class="input input--label input--transparent">
+                                <input type="text" placeholder="Enter text">
+                                <div class="input__label input__label--append">.com</div>
+                            </div>
+                        </textarea>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-12">
                         <div class="segment">
                             <h3>Inverted</h3>
                             <p class="text--lead">An input can be formatted to appear on dark backgrounds</p>
@@ -747,16 +912,59 @@
                                 </div>
                                 
                             </div>
-
-
                         </div>
+                    </div>
+                </div>
 
+                
+                <div class="row">
+                    <input type="checkbox" id="inverted-input-visibility__btn" class="code-visibility-toggler">
+                    <div class="col-12">
+                        <label for="inverted-input-visibility__btn" class="code-visibility__button">
+                            <i class="fa fa-code" aria-hidden="true"></i>
+                        </label>
+                    </div>
+                    <div class="col-12 code__container">
+                        <textarea class="code">
+                            <div class="input">
+                                <input type="text" placeholder="Search">
+                            </div>
 
+                            <div class="input input--label">
+                                <input type="text" placeholder="Enter text">
+                                <div class="input__label input__label--append">.com</div>
+                            </div>
+                            
+                            <div class="input input--label input--inverted">
+                                <div class="input__label input__label--prepend input__label--basic">http://</div>
+                                <input type="text" placeholder="Enter text">
+                            </div>
+
+                            <div class="input input--label input--inverted">
+                                <input type="text" placeholder="Enter text">
+                                <div class="input__label input__label--append input__label--basic">.com</div>
+                            </div>    
+                            
+                            <div class="input input--label input--inverted">
+                                <div class="input__label input__label--prepend">http://</div>
+                                <input type="text" placeholder="Enter text">
+                            </div>
+                            
+                            <div class="input input--label input--inverted">
+                                <input type="text" placeholder="Enter text">
+                                <div class="input__label input__label--append">.com</div>
+                            </div>
+                        </textarea>
+                    </div>
+                </div>
+
+                
+                <div class="row">
+                    <div class="col-12">
                         <div class="segment">
                             <h3>Fluid</h3>
                             <p class="text--lead">An input can take the size of its container</p>
                             <br>
-                            
                             <div class="input input--fluid">
                                 <input type="text" placeholder="Enter text">
                             </div>
@@ -769,12 +977,37 @@
                             </div>
 
                         </div>
+                    </div>
+                </div>
 
+                
+                <div class="row">
+                    <input type="checkbox" id="fluid-input-visibility__btn" class="code-visibility-toggler">
+                    <div class="col-12">
+                        <label for="fluid-input-visibility__btn" class="code-visibility__button">
+                            <i class="fa fa-code" aria-hidden="true"></i>
+                        </label>
+                    </div>
+                    <div class="col-12 code__container">
+                        <textarea class="code">
+                            <div class="input input--fluid">
+                                <input type="text" placeholder="Enter text">
+                            </div>
+
+                            <div class="input input--fluid input--icon">
+                                <i class="fa fa-search"></i>
+                                <input type="text" placeholder="Enter text">
+                            </div>
+                        </textarea>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
                         <div class="segment">
                             <h3>Size</h3>
                             <p class="text--lead"> An input can vary in size</p>
                             <br>
-
                             <div class="input input--small input--icon">
                                 <i class="fa fa-search"></i>
                                 <input type="text" placeholder="Enter text">
@@ -793,13 +1026,43 @@
                                 <i class="fa fa-search"></i>
                                 <input type="text" placeholder="Enter text">
                             </div>
-
                         </div>
-
-
                     </div>
-        
-                    <!-- <div class="input">
+                </div>
+
+                
+                <div class="row">
+                    <input type="checkbox" id="size-input-visibility__btn" class="code-visibility-toggler">
+                    <div class="col-12">
+                        <label for="size-input-visibility__btn" class="code-visibility__button">
+                            <i class="fa fa-code" aria-hidden="true"></i>
+                        </label>
+                    </div>
+                    <div class="col-12 code__container">
+                        <textarea class="code">
+                            <div class="input input--small input--icon">
+                                <i class="fa fa-search"></i>
+                                <input type="text" placeholder="Enter text">
+                            </div>
+
+                            <br><br>
+                            
+                            <div class="input input--medium input--icon">
+                                <i class="fa fa-search"></i>
+                                <input type="text" placeholder="Enter text">
+                            </div>
+                
+                            <br><br>
+
+                            <div class="input input--large input--icon">
+                                <i class="fa fa-search"></i>
+                                <input type="text" placeholder="Enter text">
+                            </div>
+                        </textarea>
+                    </div>
+                </div>        
+
+                <!-- <div class="input">
                         <input type="email" placeholder="Enter text">
                     </div>
         
