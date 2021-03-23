@@ -72,7 +72,7 @@
     text-decoration: none;
 }
 
-.docs__section a:hover:after {
+.docs__section h2 > a:hover:after {
     content: '#';
     color: var(--color-blue)
 }
@@ -109,7 +109,7 @@
         color: white;
     }
 
-    #navbar .nav__content {
+    #navbar .nav__toggler ~ .nav__content {
         height: 0;
         position: absolute;
         top: 100%;
@@ -129,14 +129,14 @@
         transition: height .5s;
     }
 
-    #navbar .nav__list {
+    #navbar .nav__toggler ~ .nav__content > .nav__list {
         display: block;
         margin: 0.2em auto;
         align-items: center;
         text-align: center;
     }
 
-    #navbar .nav__item {
+    #navbar .nav__toggler ~ .nav__content .nav__item {
         padding: 0.3em 1em;
     }
 
