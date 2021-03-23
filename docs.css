@@ -149,3 +149,28 @@
         padding: 0.5rem 1rem;
     }
 }
+
+.CodeMirror {
+    height: auto;
+    width: 100%;
+    font-size: 1rem;
+}
+
+.code-visibility-toggler {
+    display: none;
+}
+
+.code-visibility__button {
+    float: right;
+    cursor: pointer;
+}
+
+.code__container {
+    display: none;
+    margin: 1em 0;
+}
+
+.code-visibility-toggler:checked ~ .code__container {
+    display: inherit;
+}
+

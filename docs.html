@@ -6,9 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Easy UI</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./codemirror-5.60.0/lib/codemirror.css">
+    <script src="./codemirror-5.60.0/lib/codemirror.js"></script>
+    <script src="./codemirror-5.60.0/mode/xml/xml.js"></script>
+    <link rel="stylesheet" href="./codemirror-5.60.0/theme/material-darker.css">
+
+
     <link rel="stylesheet" href="docs.css">
     <link rel="stylesheet" href="./components/index.css">
     <script src="index.js"></script>
+    <script src="./docs.js"></script>
 </head>
 <body>
     <div class="docs">
@@ -47,7 +54,10 @@
                 <div class="row">
                     <div class="col-12 row">
                         <h4 class="h4 col-12 m-0">For integrating via CDN -</h4>
-                        <p class="col-7 m-0 text--lead">Just add below link in your html file.</p>
+                        <p class="col-12 m-0 text--lead">Just add below link in your html file.</p>
+                        <textarea class="code">
+                            <link rel="stylesheet" href="https://seasoning-ui.netlify.app/components/index.css">
+                        </textarea>
                     </div>
 
                     <div class="col-12 row">
@@ -87,6 +97,30 @@
                     <div class="col-3 layout-primitives__block">col-3</div>
                     <div class="col-1 layout-primitives__block">col-1</div>
 
+                </div>
+                <div class="row">
+                    <input type="checkbox" id="layout-primitives-visibility__btn" class="code-visibility-toggler">
+                    <div class="col-12">
+                        <label for="layout-primitives-visibility__btn" class="code-visibility__button">
+                            <i class="fa fa-code" aria-hidden="true"></i>
+                        </label>
+                    </div>
+                    <div class="col-12 code__container">
+                        <textarea class="code">
+                            <div class="col-12 layout-primitives__block">col-12</div>
+                            <div class="col-11 layout-primitives__block">col-11</div>
+                            <div class="col-10 layout-primitives__block">col-10</div>
+                            <div class="col-9 layout-primitives__block">col-9</div>
+                            <div class="col-8 layout-primitives__block">col-8</div>
+                            <div class="col-7 layout-primitives__block">col-7</div>
+                            <div class="col-6 layout-primitives__block">col-6</div>
+                            <div class="col-5 layout-primitives__block">col-5</div>
+                            <div class="col-4 layout-primitives__block">col-4</div>
+                            <div class="col-3 layout-primitives__block">col-3</div>
+                            <div class="col-2 layout-primitives__block">col-2</div>
+                            <div class="col-1 layout-primitives__block">col-1</div>
+                        </textarea>
+                    </div>
                 </div>
             </section>
 
