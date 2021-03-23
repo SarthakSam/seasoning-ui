@@ -6,6 +6,6 @@ window.onload = () => {
             theme: 'material-darker',
             lineNumbers: true,
             readOnly: true
-        });    
+        });   
     })
 }

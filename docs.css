@@ -165,12 +165,16 @@
     cursor: pointer;
 }
 
+.code__container > .CodeMirror {
+    height: 100%;
+}
+
 .code__container {
-    display: none;
+    height: 0;
     margin: 1em 0;
+    /* transition: height .5s; */
 }
 
 .code-visibility-toggler:checked ~ .code__container {
-    display: inherit;
+    height: fit-content;
 }
-
