@@ -183,3 +183,94 @@
 .code-visibility-toggler:checked ~ .code__container {
     height: fit-content;
 }
+
+.sideNav {
+    position: fixed;
+    background: var(--color-blue);
+    top: 0;
+    min-width: 200px;
+    width: 25%;
+    max-width: 350px;
+    height: 100%;
+    left: -100%;
+    z-index: 1000000;
+    overflow: auto;
+    transition: 0.7s ease;
+}
+
+#sideNav__toggler {
+    display: none;
+}
+
+.sideNav__open {
+    position: fixed;
+    top: 2em;
+    font-size: 2.5rem;
+    left: 0.5em;
+    cursor: pointer;
+}
+
+.sideNav__open > i {
+    color: var(--color-blue);
+}
+
+.sideNav__close {
+    position: absolute;
+    top: 0.5em;
+    font-size: 2.5rem;
+    right: 0.5em;
+    cursor: pointer;
+    overflow: auto;
+}
+
+.sideNav__close > i {
+    color: var(--color-red);
+}
+
+#sideNav__toggler:checked ~ .sideNav__open {
+    display: none;
+}
+
+#sideNav__toggler:checked ~ .sideNav {
+    left: 0;
+}
+
+.sideNav__content {
+    display: flex;
+    height: 90%;
+    align-items: center;
+   justify-content: space-around;
+   margin: 2em;
+}
+
+.sideNav__content > ul  li.list__item {
+    padding: 0.5em 2em;
+    list-style: none;
+    transition: 0.8s ease;
+}
+
+.sideNav__content > ul  li.list__item:hover {
+    background: rgba(180, 170, 220, 0.5);
+    margin-left: 1em;
+}
+
+.sideNav__content a {
+    text-decoration: none;
+    color: white;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+ 
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
