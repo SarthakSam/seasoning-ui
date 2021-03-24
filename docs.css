@@ -153,8 +153,12 @@
 .CodeMirror {
     height: auto;
     width: 100%;
-    font-size: 1rem;
-    overflow-y: hidden;
+}
+
+@media screen and (max-width: 700px) {
+    .CodeMirror {
+        font-size: 0.8rem;
+    }
 }
 
 .code-visibility-toggler {

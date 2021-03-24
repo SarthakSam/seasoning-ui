@@ -5,7 +5,9 @@ window.onload = () => {
             mode: 'xml',
             theme: 'material-darker',
             lineNumbers: true,
-            readOnly: true
+            readOnly: true,
+            lineWrapping: true,
+            scrollbarStyle: null
         });   
     })
 }
