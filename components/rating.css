@@ -1,6 +1,15 @@
 .rating__container {
     display: flex;
+    font-size: 1.2rem;
     /* flex-direction: row-reverse; */
+}
+
+.rating__container.rating--md {
+    font-size: 2rem;
+}
+
+.rating__container.rating--lg {
+    font-size: 2.5rem;
 }
 
 .rating__input {
@@ -19,15 +28,17 @@
 .rating--heart .rating__control::before{
     content: '\f004';
     color: var(--color-pink);
-    font-size: 1.5rem;
+    font-size: inherit;
     font-weight: 700;
+    cursor: pointer;
     margin: 0 0.1em;
 }
 
 .rating--star .rating__control::before{
     content: '\f005';
-    font-size: 1.5rem;
+    font-size: inherit;
     color: var(--color-yellow);
     margin: 0 0.1em;
+    cursor: pointer;
     font-weight: 700;
 }
