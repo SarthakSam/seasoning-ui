@@ -1,4 +1,8 @@
 
+html {
+    scroll-behavior: smooth;
+}
+
 .docs {
     display: grid;
     width: 100%;
