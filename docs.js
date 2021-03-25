@@ -3,7 +3,7 @@ window.onload = () => {
     Array.from( allCodes ).forEach( elem => {
         CodeMirror.fromTextArea(elem, {
             mode: 'xml',
-            theme: 'material-darker',
+            theme: 'lucario',
             lineNumbers: true,
             readOnly: true,
             lineWrapping: true,

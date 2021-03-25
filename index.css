@@ -90,7 +90,7 @@
 }
 
 .home__overview .card .card__image {
-    height: 40%;
+    width: 100%;
 }
 
 .home__overview .card .card__title {
