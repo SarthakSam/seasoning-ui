@@ -1342,3 +1342,53 @@
         transform: rotate(360deg);
     }
 }
+
+
+.badge__container {
+    position: relative;
+}
+
+.badge-image-eg {
+    height: 4em;
+    width: 4.2em;
+}
+
+.badge-icon-eg > i {
+    font-size: 2.4rem;
+}
+
+.badge {
+    min-width: fit-content;
+    min-height: fit-content;
+    position: absolute;
+    /* top: 0.7em;*/
+    right: 0.1em;
+    text-align: center;
+}
+
+.badge--sm {
+    height: 1em;
+    width: 1em;
+}
+
+.badge--md {
+    height: 1.2em;
+    width: 1.2em;
+}
+
+.badge--round {
+    border-radius: 50%;
+}
+
+.pill {
+    border-radius: 9999px;
+    padding: 0.2em 0.5em;
+}
+
+.pill-md {
+    padding: 0.4em 0.8em;
+}
+
+.pill-lg {
+    padding: 0.6em 1.2em;
+}
