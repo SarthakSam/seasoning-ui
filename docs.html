@@ -62,61 +62,59 @@
             <label for="sideNav__toggler" class="sideNav__close">
                 <i class="fas fa-times"></i>
             </label>
-            <div class="sideNav__content">
-                <ul>
-                    <li class="list__item">
-                        <a href="#getting-started">Getting Started</a>
-                    </li>
-                    <li class="list__item">
-                        <a href="#layout-primitives">Layout Primitives</a>
-                    </li>
-                    <li class="list__item">
-                        <a href="#typography">Typography</a>
-                    </li>
-                    <li class="list__item">
-                        <a href="#colors">Colors</a>
-                    </li>
-                    <li class="list__item">
-                        <a href="#images">Images</a>
-                    </li>
-                    <li class="list__item">
-                        <a href="#button">Button</a>
-                    </li>
-                    <li class="list__item">
-                        <a href="#badge-and-pill">Badge and Pill</a>
-                    </li>
-                    <li class="list__item">
-                        <a href="#avatar">Avatar</a>
-                    </li>
-                    <li class="list__item">
-                        <a href="#text-input">Text Input</a>
-                    </li>
-                    <li class="list__item">
-                        <a href="#select">Select</a>
-                    </li>
-                    <li class="list__item">
-                        <a href="#select-menu">Select Menu</a>
-                    </li>
-                    <li class="list__item">
-                        <a href="#navbar">NavBar</a>
-                    </li>
-                    <li class="list__item">
-                        <a href="#rating">Rating</a>
-                    </li>
-                    <li class="list__item">
-                        <a href="#alert">Alert</a>
-                    </li>
-                    <li class="list__item">
-                        <a href="#spinner">Spinner</a>
-                    </li>
-                    <li class="list__item">
-                        <a href="#popup">Popup</a>
-                    </li>
-                    <li class="list__item">
-                        <a href="#card">Card</a>
-                    </li>
-                </ul>
-            </div>
+            <ul class="sideNav__content">
+                <li class="list__item">
+                    <a href="#getting-started">Getting Started</a>
+                </li>
+                <li class="list__item">
+                    <a href="#layout-primitives">Layout Primitives</a>
+                </li>
+                <li class="list__item">
+                    <a href="#typography">Typography</a>
+                </li>
+                <li class="list__item">
+                    <a href="#colors">Colors</a>
+                </li>
+                <li class="list__item">
+                    <a href="#images">Images</a>
+                </li>
+                <li class="list__item">
+                    <a href="#button">Button</a>
+                </li>
+                <li class="list__item">
+                    <a href="#badge-and-pill">Badge and Pill</a>
+                </li>
+                <li class="list__item">
+                    <a href="#avatar">Avatar</a>
+                </li>
+                <li class="list__item">
+                    <a href="#text-input">Text Input</a>
+                </li>
+                <li class="list__item">
+                    <a href="#select">Select</a>
+                </li>
+                <li class="list__item">
+                    <a href="#select-menu">Select Menu</a>
+                </li>
+                <li class="list__item">
+                    <a href="#navbar">NavBar</a>
+                </li>
+                <li class="list__item">
+                    <a href="#rating">Rating</a>
+                </li>
+                <li class="list__item">
+                    <a href="#alert">Alert</a>
+                </li>
+                <li class="list__item">
+                    <a href="#spinner">Spinner</a>
+                </li>
+                <li class="list__item">
+                    <a href="#popup">Popup</a>
+                </li>
+                <li class="list__item">
+                    <a href="#card">Card</a>
+                </li>
+            </ul>
         </div>
         
         <main class="docs__content">
@@ -307,10 +305,37 @@
 
             <section class="docs__section" id="images">
                 <h2 class="h2"><a href="#images">Images</a></h2>
+
                 <div class="row">
-                    <div class="row col-12">
+                    <div class="row col-4 col-lg-5 col-md-6 col-sm-12">
+                        <img src="./assets/avatar-5.png" class="image" alt="">
+                    </div>
+
+                    <div class="row col-4 col-lg-5 col-md-6 col-sm-12">
+                        <img src="./assets/avatar-5.png" class="image image--round" alt="">
                     </div>
                 </div>
+
+                <div class="row">
+                    <input type="checkbox" id="images-visibility__btn" class="code-visibility-toggler">
+                    <div class="col-12">
+                        <label for="images-visibility__btn" class="code-visibility__button">
+                            <i class="fa fa-code" aria-hidden="true"></i>
+                        </label>
+                    </div>
+                    <div class="col-12 code__container">
+                        <textarea class="code">
+                            <div class="row col-4 col-lg-5 col-md-6 col-sm-12">
+                                <img src="./assets/avatar-5.png" class="image" alt="">
+                            </div>
+        
+                            <div class="row col-4 col-lg-5 col-md-6 col-sm-12">
+                                <img src="./assets/avatar-5.png" class="image image--round" alt="">
+                            </div>
+                        </textarea>
+                    </div>
+                </div>
+
             </section>
 
             <section class="docs__section" id="button">
@@ -585,20 +610,330 @@
 
             <section class="docs__section" id="badge-and-pill">
                 <h2 class="h2"><a href="#badge-and-pill">Badge and Pill</a></h2>
-                <div>
+                <br><br>
 
+                <h3 class="h3">Badges</h3>
+
+                <div class="row">
+                    <p class=" col-12 text--lead">Badges as status</p>
+                    <div class="col-2 col-md-3 col-sm-4">
+                        <div class="badge__container badge-image-eg">
+                            <img class="image image--round" src="./assets/avatar-4.png" alt="">
+                            <span class="badge badge--sm badge--round bg-green"></span>
+                        </div>
+                    </div>
+
+                    <div class="col-2 col-md-3 col-sm-4">
+                        <div class="badge__container badge-image-eg">
+                            <img class="image image--round" src="./assets/avatar-4.png" alt="">
+                            <span class="badge badge--sm badge--round bg-red"></span>
+                        </div>
+                    </div>
+                    
+                    <div class="col-2 col-md-3 col-sm-4">
+                        <div class="badge__container badge-image-eg">
+                            <img class="image image--round" src="./assets/avatar-4.png" alt="">
+                            <span class="badge badge--sm badge--round bg-yellow"></span>
+                        </div>
+                    </div>
+
+                    <div class="col-2 col-md-3 col-sm-4">
+                        <div class="badge__container badge-image-eg">
+                            <img class="image image--round" src="./assets/avatar-4.png" alt="">
+                            <span class="badge badge--sm badge--round bg-grey"></span>
+                        </div>
+                    </div>    
                 </div>
+
+                <div class="row">
+                    <input type="checkbox" id="status-badge-visibility__btn" class="code-visibility-toggler">
+                    <div class="col-12">
+                        <label for="status-badge-visibility__btn" class="code-visibility__button">
+                            <i class="fa fa-code" aria-hidden="true"></i>
+                        </label>
+                    </div>
+                    <div class="col-12 code__container">
+                        <textarea class="code">
+                            <div class="col-2 col-md-3 col-sm-4">
+                                <div class="badge__container badge-image-eg">
+                                    <img class="image image--round" src="./assets/avatar-4.png" alt="">
+                                    <span class="badge badge--sm badge--round bg-green"></span>
+                                </div>
+                            </div>
+        
+                            <div class="col-2 col-md-3 col-sm-4">
+                                <div class="badge__container badge-image-eg">
+                                    <img class="image image--round" src="./assets/avatar-4.png" alt="">
+                                    <span class="badge badge--sm badge--round bg-red"></span>
+                                </div>
+                            </div>
+                            
+                            <div class="col-2 col-md-3 col-sm-4">
+                                <div class="badge__container badge-image-eg">
+                                    <img class="image image--round" src="./assets/avatar-4.png" alt="">
+                                    <span class="badge badge--sm badge--round bg-yellow"></span>
+                                </div>
+                            </div>
+        
+                            <div class="col-2 col-md-3 col-sm-4">
+                                <div class="badge__container badge-image-eg">
+                                    <img class="image image--round" src="./assets/avatar-4.png" alt="">
+                                    <span class="badge badge--sm badge--round bg-grey"></span>
+                                </div>
+                            </div>    
+                        </textarea>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <p class=" col-12 text--lead">Badges to display count</p>
+                    <div class="col-2 col-md-3 col-sm-4">
+                        <div class="badge__container badge-icon-eg">
+                            <i class="far fa-envelope text-red"></i>
+                            <span class="badge badge--md badge--round bg-red text-white">3</span>
+                        </div>
+                    </div>
+
+                    <div class="col-2 col-md-3 col-sm-4">
+                        <div class="badge__container badge-icon-eg">
+                            <i class="fas fa-comments text-blue"></i>
+                            <span class="badge badge--md badge--round bg-dark-blue text-white">5</span>
+                        </div>
+                    </div>
+                    
+                    <div class="col-2 col-md-3 col-sm-4">
+                        <div class="badge__container badge-icon-eg">
+                            <i class="fas fa-bell text-violet"></i>
+                            <span class="badge badge--md badge--round bg-white">10</span>
+                        </div>
+                    </div>
+
+                    <div class="col-2 col-md-3 col-sm-4">
+                        <div class="badge__container badge-icon-eg">
+                            <i class="fas fa-shopping-cart text-dark-blue"></i>
+                            <span class="badge badge--md badge--round bg-grey">1</span>
+                        </div>
+                    </div>    
+                </div>
+
+                <div class="row">
+                    <input type="checkbox" id="count-badge-visibility__btn" class="code-visibility-toggler">
+                    <div class="col-12">
+                        <label for="count-badge-visibility__btn" class="code-visibility__button">
+                            <i class="fa fa-code" aria-hidden="true"></i>
+                        </label>
+                    </div>
+                    <div class="col-12 code__container">
+                        <textarea class="code">
+                            <div class="col-2 col-md-3 col-sm-4">
+                                <div class="badge__container badge-icon-eg">
+                                    <i class="far fa-envelope text-red"></i>
+                                    <span class="badge badge--md badge--round bg-red text-white">3</span>
+                                </div>
+                            </div>
+        
+                            <div class="col-2 col-md-3 col-sm-4">
+                                <div class="badge__container badge-icon-eg">
+                                    <i class="fas fa-comments text-blue"></i>
+                                    <span class="badge badge--md badge--round bg-dark-blue text-white">5</span>
+                                </div>
+                            </div>
+                            
+                            <div class="col-2 col-md-3 col-sm-4">
+                                <div class="badge__container badge-icon-eg">
+                                    <i class="fas fa-bell text-violet"></i>
+                                    <span class="badge badge--md badge--round bg-white">10</span>
+                                </div>
+                            </div>
+        
+                            <div class="col-2 col-md-3 col-sm-4">
+                                <div class="badge__container badge-icon-eg">
+                                    <i class="fas fa-shopping-cart text-dark-blue"></i>
+                                    <span class="badge badge--md badge--round bg-grey">1</span>
+                                </div>
+                            </div>    
+                        </textarea>
+                    </div>
+                </div>
+
+    
+                <div class="row">
+                    <p class=" col-12 text--lead">Example of using badge on an ecommmerce card</p>
+                    <div class="col-3 col-xl-4 col-lg-5 col-md-7 col-sm-12 ">
+                        <div class="card">
+                            <div class="card__img badge__container">
+                                <img src="./assets/product.jpg" alt="">
+                                <span class="badge bg-blue text-white" style="padding: 0.5em;">Out of stock</span>
+                            </div>
+                            <div class="card__body">
+                                <p class="card__meta">Apple</p>
+                                <p class="card__title">Iphone X</p>
+                                <p class="card__lead">Rs 380</p>
+                                <p class="card__description">Lorem ipsum dolor sit amet consectetur, adipisic elit. Corporis exerci illum assumenda pariatur .</p>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+
+                <div class="row">
+                    <input type="checkbox" id="badge-eg-visibility__btn" class="code-visibility-toggler">
+                    <div class="col-12">
+                        <label for="badge-eg-visibility__btn" class="code-visibility__button">
+                            <i class="fa fa-code" aria-hidden="true"></i>
+                        </label>
+                    </div>
+                    <div class="col-12 code__container">
+                        <textarea class="code">
+                            <div class="col-3 col-xl-4 col-lg-5 col-md-7 col-sm-12 ">
+                                <div class="card">
+                                    <div class="card__img badge__container">
+                                        <img src="./assets/product.jpg" alt="">
+                                        <span class="badge bg-blue text-white" style="padding: 0.5em;">Out of stock</span>
+                                    </div>
+                                    <div class="card__body">
+                                        <p class="card__meta">Apple</p>
+                                        <p class="card__title">Iphone X</p>
+                                        <p class="card__lead">Rs 380</p>
+                                        <p class="card__description">Lorem ipsum dolor sit amet consectetur, adipisic elit. Corporis exerci illum assumenda pariatur .</p>
+                                    </div>
+                                </div>  
+                            </div>
+                        </textarea>
+                    </div>
+                </div>
+    
+                <h3 class="h3">Pills</h3>
+
+                <div class="row">
+                    <p class=" col-12 text--lead">Small sized pills</p>
+                    <span class="pill bg-blue text-white">Small pill</span>
+                    <span class="pill bg-yellow text-white">Small pill</span>
+                    <span class="pill bg-pink text-white">Small pill</span>
+                    <span class="pill bg-green text-white">Small pill</span>
+                    <span class="pill bg-red text-white">Small pill</span>
+                    <span class="pill bg-violet text-white">Small pill</span>
+                    <span class="pill bg-dark-blue text-white">Small pill</span>
+                    <span class="pill bg-black text-white">Small pill</span>
+                    <span class="pill bg-dark-green text-white">Small pill</span>
+                    <span class="pill bg-light-green text-black">Small pill</span>
+                    <span class="pill bg-purple text-white">Small pill</span>
+                </div>
+
+                <div class="row">
+                    <input type="checkbox" id="small-pill-visibility__btn" class="code-visibility-toggler">
+                    <div class="col-12">
+                        <label for="small-pill-visibility__btn" class="code-visibility__button">
+                            <i class="fa fa-code" aria-hidden="true"></i>
+                        </label>
+                    </div>
+                    <div class="col-12 code__container">
+                        <textarea class="code">
+                            <span class="pill bg-blue text-white">Small pill</span>
+                            <span class="pill bg-yellow text-white">Small pill</span>
+                            <span class="pill bg-pink text-white">Small pill</span>
+                            <span class="pill bg-green text-white">Small pill</span>
+                            <span class="pill bg-red text-white">Small pill</span>
+                            <span class="pill bg-violet text-white">Small pill</span>
+                            <span class="pill bg-dark-blue text-white">Small pill</span>
+                            <span class="pill bg-black text-white">Small pill</span>
+                            <span class="pill bg-dark-green text-white">Small pill</span>
+                            <span class="pill bg-light-green text-black">Small pill</span>
+                            <span class="pill bg-purple text-white">Small pill</span>
+                        </textarea>
+                    </div>
+                </div>
+    
+                <div class="row">
+                    <p class=" col-12 text--lead">Medium sized pills</p>
+
+                    <span class="pill pill-md bg-blue text-white">Medium pill</span>
+                    <span class="pill pill-md bg-pink text-white">Medium pill</span>
+                    <span class="pill pill-md bg-green text-white">Medium pill</span>
+                    <span class="pill pill-md bg-yellow text-white">Medium pill</span>
+                    <span class="pill pill-md bg-red text-white">Medium pill</span>
+                    <span class="pill pill-md bg-violet text-white">Medium pill</span>
+                    <span class="pill pill-md bg-dark-blue text-white">Medium pill</span>
+                    <span class="pill pill-md bg-black text-white">Medium pill</span>
+                    <span class="pill pill-md bg-dark-green text-white">Medium pill</span> 
+                    <span class="pill pill-md bg-light-green text-black">Medium pill</span>
+                    <span class="pill pill-md bg-purple text-white">Medium pill</span>
+                </div>
+
+                <div class="row">
+                    <input type="checkbox" id="medium-pill-visibility__btn" class="code-visibility-toggler">
+                    <div class="col-12">
+                        <label for="medium-pill-visibility__btn" class="code-visibility__button">
+                            <i class="fa fa-code" aria-hidden="true"></i>
+                        </label>
+                    </div>
+                    <div class="col-12 code__container">
+                        <textarea class="code">
+                            <span class="pill pill-md bg-blue text-white">Medium pill</span>
+                            <span class="pill pill-md bg-pink text-white">Medium pill</span>
+                            <span class="pill pill-md bg-green text-white">Medium pill</span>
+                            <span class="pill pill-md bg-yellow text-white">Medium pill</span>
+                            <span class="pill pill-md bg-red text-white">Medium pill</span>
+                            <span class="pill pill-md bg-violet text-white">Medium pill</span>
+                            <span class="pill pill-md bg-dark-blue text-white">Medium pill</span>
+                            <span class="pill pill-md bg-black text-white">Medium pill</span>
+                            <span class="pill pill-md bg-dark-green text-white">Medium pill</span> 
+                            <span class="pill pill-md bg-light-green text-black">Medium pill</span>
+                            <span class="pill pill-md bg-purple text-white">Medium pill</span>
+                        </textarea>
+                    </div>
+                </div>
+    
+                <div class="row">
+                    <p class=" col-12 text--lead">Large sized pills</p>
+
+                    <span class="pill pill-lg bg-blue text-white">Large pill</span>
+                    <span class="pill pill-lg bg-yellow text-white">Large pill</span>
+                    <span class="pill pill-lg bg-pink text-white">Large pill</span>
+                    <span class="pill pill-lg bg-green text-white">Large pill</span>
+                    <span class="pill pill-lg bg-red text-white">Large pill</span>
+                    <span class="pill pill-lg bg-violet text-white">Large pill</span>
+                    <span class="pill pill-lg bg-dark-blue text-white">Large pill</span>
+                    <span class="pill pill-lg bg-black text-white">Large pill</span>
+                    <span class="pill pill-lg bg-dark-green text-white">Large pill</span>
+                    <span class="pill pill-lg bg-light-green text-black">Large pill</span>
+                    <span class="pill pill-lg bg-purple text-white">Large pill</span>
+                </div>
+
+                <div class="row">
+                    <input type="checkbox" id="large-pill-visibility__btn" class="code-visibility-toggler">
+                    <div class="col-12">
+                        <label for="large-pill-visibility__btn" class="code-visibility__button">
+                            <i class="fa fa-code" aria-hidden="true"></i>
+                        </label>
+                    </div>
+                    <div class="col-12 code__container">
+                        <textarea class="code">
+                            <span class="pill pill-lg bg-blue text-white">Large pill</span>
+                            <span class="pill pill-lg bg-yellow text-white">Large pill</span>
+                            <span class="pill pill-lg bg-pink text-white">Large pill</span>
+                            <span class="pill pill-lg bg-green text-white">Large pill</span>
+                            <span class="pill pill-lg bg-red text-white">Large pill</span>
+                            <span class="pill pill-lg bg-violet text-white">Large pill</span>
+                            <span class="pill pill-lg bg-dark-blue text-white">Large pill</span>
+                            <span class="pill pill-lg bg-black text-white">Large pill</span>
+                            <span class="pill pill-lg bg-dark-green text-white">Large pill</span>
+                            <span class="pill pill-lg bg-light-green text-black">Large pill</span>
+                            <span class="pill pill-lg bg-purple text-white">Large pill</span>
+                        </textarea>
+                    </div>
+                </div>
+
             </section>
 
             <section class="docs__section" id="avatar">
                 <h2 class="h2"><a href="#avatar">Avatar</a></h2>
                 <div class="row">
-                    <div class="col-2">
+                    <div class="col-2 col-md-4 col-sm-6">
                         <div class="avatar">
                             <img src="./assets/avatar1.png" alt="" class="avatar__img">
                         </div>
                     </div>
-                    <div class="col-2">
+                    <div class="col-2 col-md-4 col-sm-6">
                         <div class="avatar avatar--round">
                             <img src="./assets/avatar2.png" alt="" class="avatar__img">
                         </div>
