@@ -8,6 +8,10 @@
     cursor: pointer;
 }
 
+.btn > i {
+    color: inherit;
+}
+
 .btn--focusable:focus {
     background: var(--color-dark-grey);
     color: black;

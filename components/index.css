@@ -12,6 +12,7 @@
 @import url('./input.css');
 @import url('./spinner.css');
 @import url('./alerts.css');
+@import url('./card.css');
 
 * {
     font-family: 'Dosis', sans-serif;
