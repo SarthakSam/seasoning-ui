@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Seasoning</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
-    <link rel="stylesheet" href="index1.css">
+    <link rel="stylesheet" href="/components/index.css">
     <link rel="stylesheet" href="components-backup.css">
     <script src="index.js"></script>
 
@@ -747,8 +747,7 @@
             </div>
 
             <div class="card">
-                <div class="card__placeholder">
-                </div>
+                
                 <div class="card__body">
                     <p class="card__title">Sarthak</p>
                     <p class="card__meta">Joined in 2020</p>
@@ -765,26 +764,93 @@
             </div>
 
             <div class="card">
-                <div class="card__header row">
-                    <img src="./assets/avatar2.png" class="avatar avatar--round">
-                    <p style="flex: 1;">Women</p>
-                    <span class="card__meta row--right">14h</span>
+                <div class="card__header">
+                        <ul class="card__list spaceBetween">
+                            <li class="list__item row alignCenter">
+                                <img src="./assets/avatar2.png" class="avatar avatar--round">
+                                <span>Women</span>
+                            </li>
+                            <!-- <li class="list__item">Women</li> -->
+                            <li class="list__item">
+                                <span class="card__meta">14h</span>
+                            </li>
+                        </ul>
                 </div>
                 <div class="card__img">
                     <img src="./assets/avatar2.png">
                 </div>
                 <div class="card__body">
-                    <p class="card__meta">Joined in 2020</p>
-                    <p class="card__description">Lorem ipsum dolor sit amet consectetur, adipisic elit. Corporis exerci illum assumenda pariatur .</p>
+                    <ul class="card__list spaceBetween">
+                        <li class="list__item">
+                            <i class="fa fa-comment"></i>
+                            <span>3 comments</span>
+                        </li>
+                        <li class="list__item">
+                            <i class="fa fa-heart"></i>
+                            <span>17 likes</span>
+                        </li>
+                    </ul>
                 </div>
                 <div class="card__footer">
-                    <p>
+                    <p class="text--grey">
                         <span class="card__icon">
-                            <i class="far fa-user"></i>
+                            <i class="far fa-heart"></i>
                         </span>
-                        22 Friends
+                        Add a comment
                     </p>
                 </div>
+            </div>
+
+
+            <div class="card">
+                <div class="card__header">
+                    <ul class="card__list spaceBetween">
+                        <li class="list__item">
+                            <p class="card__title">Elliot Fu</p>
+                            <p class="card__meta">Friends of Veronika</p>
+                        </li>
+                        <li class="list__item">
+                            <img src="./assets/avatar-4.png" class="avatar" alt="">
+                        </li>
+                    </ul>
+                </div>
+                <div class="card__body">
+                    Elliot requested permission to view your contact details
+                </div>
+                <div class="card__footer">
+                    <div class="row">
+                        <button class="col-6 btn btn--success btn--fluid btn--outline">Approve</button>
+                        <button class="col-6 btn btn--danger btn--fluid btn--outline">Reject</button>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card__img">
+                    <img src="./assets/product.jpg" alt="">
+                </div>
+                <div class="card__body">
+                    <p class="card__meta">Apple</p>
+                    <p class="card__title">Iphone X</p>
+                    <p class="card__lead">Rs 380</p>
+                    <p class="card__description">Lorem ipsum dolor sit amet consectetur, adipisic elit. Corporis exerci illum assumenda pariatur .</p>
+                </div>
+            </div>
+
+            <div class="card card--horizontal">
+                <div class="card__img col-6 p-0 m-0">
+                    <img src="./assets/avatar-7.jpg" alt="">
+                </div>
+                <div class="card__content">
+                    <p class="card__title">Jenny Hess</p>
+                    <p class="card__description">Jenny is a student studying Media Management at the New School</p>
+                    <button class="btn btn--fluid"> 
+                        <i class="fa fa-plus"></i>
+                        <span>Add Friend</span>
+                    </button>
+                </div>
+
             </div>
 
         </main>
