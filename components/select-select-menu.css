@@ -47,7 +47,7 @@
     background: white;
     z-index: 1000;
     left: 0;
-    width: fit-content;
+    width: max-content;
 }
 
 .dropdown--right > .dropdown__menu {
