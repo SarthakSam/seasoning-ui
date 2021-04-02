@@ -1329,6 +1329,10 @@ background: transparent;
     width: 100%;
 }
 
+.textarea::placeholder {
+    color: var(--color-grey);
+}
+
 
 
 /* SELECT MENU */
